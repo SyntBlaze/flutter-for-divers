@@ -1,0 +1,15 @@
+[
+  "Choose Material 2 or Material 3 explicitly and document the migration boundary",
+  "Build application colors from semantic `ColorScheme` roles",
+  "Provide reviewed light, dark, high-contrast, and non-dynamic fallbacks where required",
+  "Use primary and secondary roles according to purpose rather than visual preference",
+  "Keep surfaces hierarchical and verify foreground contrast for every paired role",
+  "Never use error color as the only indication of failure",
+  "Tokenize elevation and shape so component families remain coherent",
+  "Map typography to semantic roles and test text scaling on constrained layouts",
+  "Use motion to preserve context, keep durations consistent, and support reduced motion",
+  "Test state layers with touch, mouse, keyboard, and assistive technology",
+  "Prefer component theme configuration over repeated widget-level styling",
+  "Add golden and interaction coverage before changing Material versions or generated palettes",
+  "Review release builds on every supported platform because fonts, shadows, and system colors can differ"
+]

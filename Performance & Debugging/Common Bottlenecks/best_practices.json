@@ -1,0 +1,16 @@
+[
+  "Capture a narrow profile trace of a repeatable user interaction before optimizing",
+  "Inspect slow frames individually and distinguish UI, raster, GPU, and asynchronous latency",
+  "Move large CPU-bound parsing off the UI isolate only after measuring computation and transfer costs",
+  "Use asynchronous file APIs and keep parsing or transformation out of frame-critical callbacks",
+  "Render large collections lazily with builder constructors or slivers",
+  "Place state listeners and inherited dependencies immediately above the widgets that consume them",
+  "Decode images near their required physical-pixel dimensions and keep caches bounded",
+  "Validate first-use shader mitigation on every supported renderer and representative device class",
+  "Keep custom painters deterministic, make `shouldRepaint` accurate, and avoid repainting stable content",
+  "Prefer stable constraints and one-way layout decisions over measurement-driven relayout loops",
+  "Batch or redesign chatty platform-channel exchanges when measurement shows per-call overhead is material",
+  "Control device temperature, data volume, cache state, and build mode when comparing traces",
+  "Change one suspected cause at a time and rerun the same scenario",
+  "Check startup, memory, responsiveness, and correctness for regressions after moving or caching work"
+]

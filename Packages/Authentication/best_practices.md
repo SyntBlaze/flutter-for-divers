@@ -1,0 +1,22 @@
+## Best Practices
+
+- Keep identity verification and authorization decisions on trusted services
+- Use OpenID Connect when sign-in requires identity claims on top of OAuth 2.0
+- Use Authorization Code with PKCE for public native clients
+- Prefer system browsers or platform authorization sessions for provider credentials
+- Register exact redirect URIs and validate every returned state and nonce
+- Never ship client secrets that are expected to remain confidential in a mobile app
+- Validate token signature, issuer, audience, expiry, and intended use on the backend
+- Treat decoded JWT claims as untrusted until cryptographic validation succeeds
+- Keep access tokens short-lived and narrowly scoped
+- Store only necessary session secrets in platform-backed secure storage
+- Keep tokens, authorization codes, and personal claims out of logs and analytics
+- Serialize refresh operations so concurrent failures do not rotate credentials repeatedly
+- Model signed-out, authenticating, authenticated, refreshing, expired, and failed states explicitly
+- Recheck session state after resume, deep-link return, and connectivity changes
+- Clear local credentials and user-specific caches when a session ends
+- Support server-side revocation and react promptly to rejected or disabled sessions
+- Require recent or step-up authentication for high-risk actions
+- Use local authentication to guard local access, not to replace backend authorization
+- Minimize identity data collection and define retention and account-deletion behavior
+- Test cancellation, denial, expiry, refresh failure, revocation, account linking, and redirect attacks

@@ -1,0 +1,16 @@
+[
+  "Keep the shared test app wrapper minimal, composable, and override-friendly",
+  "Exercise both light and dark or other supported theme variants where presentation changes",
+  "Set `MediaQuery` inputs explicitly when they are part of the scenario",
+  "Create fresh dependency overrides and mutable fakes for every test",
+  "Include long translations, plural forms, and right-to-left locales where supported",
+  "Test just below, at, and above layout boundaries with controlled surface sizes",
+  "Include accessibility-oriented text scales and verify that actions remain reachable",
+  "Use stable finders and bounded scrolling rather than arbitrary repeated drags",
+  "Assert semantics exposed to assistive technology, not merely visible text",
+  "Cover initial, empty, loading, success, failure, and retry states where they exist",
+  "Pump only the frames the scenario requires; use `pumpAndSettle` when settling is truly bounded",
+  "Assert observable behavior and avoid depending on private widget-tree structure",
+  "Keep tests independent of execution order, wall-clock time, network access, and host display settings",
+  "Give each test a behavioral name and one clear reason to fail"
+]

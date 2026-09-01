@@ -1,0 +1,22 @@
+## Best Practices
+
+- Ask for location access only in response to a clear feature need and explain the user benefit first
+- Request the least precise and least persistent access that satisfies the feature
+- Treat denied permission, permanently denied permission, restricted access, and disabled services as distinct states
+- Provide a useful manual or non-location path whenever the feature can support one
+- Minimize location collection, retention, logging, analytics exposure, and transmission
+- Use locale-neutral coordinate types and carry timestamp and accuracy metadata instead of passing bare display strings
+- Validate freshness and suitability without treating accuracy estimates as guarantees or inferring unsupported direction
+- Prefer a one-shot position when updates add no value; otherwise throttle, filter, or batch them to match the feature
+- Pause and dispose location streams according to screen, application, and user-session lifecycle
+- Keep selected place, current position, camera viewport, and tracking mode as separate state
+- Convert provider-specific annotations, bounds, and results at a defined adapter boundary
+- Debounce geocoding input, handle rate limits, and let users resolve ambiguous results
+- Do not treat a formatted geocoding result as a stable place identifier or verified postal address
+- Configure authorized map credentials securely and enforce platform or application restrictions where available
+- Honor tile, imagery, style, geocoding, attribution, caching, and data-retention terms
+- Cluster, simplify, or virtualize dense geographic content and avoid rebuilding the entire map for small changes
+- Design explicit loading, stale-data, offline, empty, permission, and provider-error states
+- Test permission, accuracy, lifecycle, geocoding, and provider failures through fake adapters rather than live services
+- Expose selected places, directions, distances, and map actions through screen-reader-friendly controls and text alternatives
+- Preserve required attribution and maintain sufficient contrast, target size, and non-color cues for overlays

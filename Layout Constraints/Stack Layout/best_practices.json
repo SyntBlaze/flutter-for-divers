@@ -1,0 +1,13 @@
+[
+  "Use `Stack` when overlap is intrinsic to the design, not to compensate for an unclear parent layout",
+  "Keep each `Positioned` widget directly beneath the `Stack` whose parent data it configures",
+  "Specify only enough values to determine each axis and avoid contradictory edge-and-size combinations",
+  "Prefer `Positioned.fill` for overlays and full-area interaction layers",
+  "Use `Align` when semantic alignment communicates the placement better than edge coordinates",
+  "Choose `StackFit` deliberately based on whether non-positioned children should retain natural size or fill available space",
+  "Treat out-of-range fractional offsets as intentional overflow and test them across sizes and text directions",
+  "Clip only when overflow must be hidden, and profile clipping in paint-heavy interfaces",
+  "Arrange children from visual background to foreground and verify hit behavior where they overlap",
+  "Use directional positioning and alignment when the interface must adapt to right-to-left text",
+  "Test the stack with tight, loose, and small constraints rather than assuming one screen size"
+]

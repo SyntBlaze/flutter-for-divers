@@ -1,0 +1,15 @@
+## Best Practices
+
+- Load packaged resources through `AssetBundle` without repeating expensive decoding
+- Use `DefaultAssetBundle.of(context)` when contextual asset substitution should be honored
+- Declare complete, correctly scaled asset variants for `AssetImage`
+- Give `NetworkImage` stable dimensions and deliberate loading, failure, and cache behavior
+- Use `FileImage` only on supported platforms and evict stale cached content when necessary
+- Keep `MemoryImage` bytes stable and release large buffers when they are no longer needed
+- Constrain `Image`, choose its fit explicitly, and test its semantic and failure states
+- Dispose a `RawImage` resource only when no painter or widget still needs it
+- Use consistent icon sizing and accessible labels for meaningful `Icon` glyphs
+- Apply `IconTheme` at the smallest subtree that shares one visual treatment
+- Use simple mask-like artwork when coloring an `ImageIcon`
+- Match placeholder geometry to final content and handle failed loads in `FadeInImage`
+- Give `CircleAvatar` a legible, deterministic fallback for every identity state

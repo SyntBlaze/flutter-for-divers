@@ -1,0 +1,15 @@
+[
+  "Treat each golden file as a reviewed, version-controlled visual contract",
+  "Use exact comparison by default and document every tolerance",
+  "Choose a small device matrix that represents real layout breakpoints",
+  "Generate theme variants from the same scenario data and widget state",
+  "Include text scales that expose wrapping and accessibility behavior",
+  "Load production fonts and required weights before the first capture",
+  "Replace network images with stable local bytes of known dimensions",
+  "Pump explicit durations to capture named animation states",
+  "Keep locale, platform, surface size, pixel ratio, and data fixed for every baseline",
+  "Test one visual concern per scenario and name the expected state clearly",
+  "Inspect image diffs before accepting regenerated baselines",
+  "Run behavioral and semantics tests alongside goldens rather than using image comparison for every assertion",
+  "Keep rendering environments consistent between local development and continuous integration"
+]

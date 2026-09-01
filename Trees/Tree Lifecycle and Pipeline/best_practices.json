@@ -1,0 +1,17 @@
+[
+  "Keep widget configurations immutable and represent changes with new widget instances",
+  "Use stable keys only where tree position alone cannot express identity",
+  "Do not depend on an element remaining deactivated beyond the current frame",
+  "Initialize one-time resources in `initState()` without reading inherited dependencies there",
+  "Respond to inherited values in `didChangeDependencies()` and keep repeated calls safe",
+  "Keep `build()` deterministic, fast, and free of side effects",
+  "Update configuration-dependent subscriptions in `didUpdateWidget()`",
+  "Release controllers, listeners, subscriptions, and other owned resources in `dispose()`",
+  "Check `mounted` after asynchronous gaps before using `State` or its context",
+  "Let the framework manage normal render-object attachment and detachment",
+  "Invalidate only the earliest pipeline phase whose inputs changed",
+  "Keep intrinsic and repeated layout work under control",
+  "Use repaint boundaries where measured repaint isolation outweighs compositing cost",
+  "Avoid unnecessary opacity, clipping, filtering, and extra compositing layers",
+  "Test semantic labels, actions, focus order, and merged nodes with accessibility tools"
+]

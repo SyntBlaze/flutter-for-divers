@@ -1,0 +1,12 @@
+[
+  "Let the localized application establish the primary `Directionality`",
+  "Override direction only for content or subtrees with a known directional requirement",
+  "Exercise complete screens under RTL instead of checking text alignment alone",
+  "Test mixed-script strings, numbers, punctuation, and interpolated user content",
+  "Use directional insets when spacing represents leading and trailing edges",
+  "Use directional alignment when placement should follow reading order",
+  "Model asymmetric logical corners with directional border radii",
+  "Keep visual order, reading order, focus order, and semantic order coherent",
+  "Mirror only icons whose meaning depends on direction",
+  "Include LTR and RTL locales in widget, golden, and accessibility tests"
+]

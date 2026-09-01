@@ -1,0 +1,17 @@
+## Best Practices
+
+- Run `flutter doctor` when provisioning or changing a build machine, and retain verbose diagnostics when investigating toolchain failures
+- Use `flutter pub get` for normal reproducible resolution and keep application lockfiles reviewed and committed
+- Perform dependency upgrades as explicit, testable changes with a reviewed lockfile diff
+- Keep analysis options consistent locally and in CI
+- Run fast tests on every change and publish useful reports or coverage from CI
+- Select the target device and build mode explicitly in scripts
+- Build the artifact required by the distribution channel instead of renaming or repackaging a different output
+- Inject signing credentials securely and never commit private keys or secret passwords
+- Pin and report Flutter, Dart, Java, Xcode, CocoaPods, Visual Studio, and other relevant toolchain versions
+- Keep version names and build numbers unique and synchronized with store records
+- Build Apple targets on a compatible macOS host and validate signing before the release deadline
+- Treat desktop packaging, native dependencies, signing, and notarization as tested parts of the release pipeline
+- Deploy web output with the same base path and caching assumptions used at build time
+- Archive artifacts, checksums, logs, and test results so a release can be traced to its source revision
+- Verify a release artifact in a staging distribution channel before promoting it to production

@@ -1,0 +1,15 @@
+[
+  "Use `Column` for bounded vertical flex composition and diagnose unbounded-height conflicts before adding flex children",
+  "Wrap adaptable `Row` content in flexible children and test it with narrow widths and scaled text",
+  "Use `Flex` when the direction itself is configurable; otherwise prefer the axis-specific widget",
+  "Choose `Wrap` when discrete items may move between runs and define both item and run spacing",
+  "Keep `Stack` overlap intentional, constrain positioned children, and set clipping explicitly",
+  "Use `IndexedStack` for a small set of stateful alternatives whose retained cost is acceptable",
+  "Keep `FlowDelegate` painting deterministic and repaint from an animation without rebuilding the subtree",
+  "Give custom-layout children stable IDs and keep delegate sizing, ordering, and relayout rules precise",
+  "Specify practical column-width strategies and avoid expensive intrinsic tables in large repeated content",
+  "Use `ListBody` only when another widget owns scrolling and the main axis may grow",
+  "Make `LayoutBuilder` decisions from local constraints at meaningful composition breakpoints",
+  "Build large grids lazily, preserve child identity, and keep each tile's geometry predictable",
+  "Build long lists lazily, provide stable keys where order changes, and assign clear scroll ownership"
+]

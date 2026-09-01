@@ -1,0 +1,21 @@
+## Best Practices
+
+- Keep wire-format models at data boundaries
+- Separate transport models from domain models when their responsibilities differ
+- Make nullability, required fields, and defaults explicit
+- Map external field names deliberately instead of leaking them into domain naming
+- Treat absent values and explicit `null` values according to the data contract
+- Use custom converters for repeated non-primitive mappings
+- Define a deliberate policy for unknown enum values and forward-compatible fields
+- Validate semantic constraints after syntactic deserialization
+- Keep generated files reproducible from committed declarations and configuration
+- Run generation after changing models, annotations, or schemas
+- Fail CI when generated output is stale
+- Never edit generated files by hand
+- Pin compatible generator, annotation, and runtime package versions
+- Avoid mixing multiple generation systems on one model without a clear need
+- Prefer immutable collections when the containing model promises immutability
+- Include every identity-defining field in value equality
+- Keep secrets and sensitive fields out of logs, diagnostics, and accidental serialization
+- Test round trips, malformed payloads, missing fields, nulls, and unknown values
+- Add migration or compatibility tests for persisted data and versioned APIs

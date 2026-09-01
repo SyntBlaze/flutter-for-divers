@@ -1,0 +1,22 @@
+## Best Practices
+
+- Define semantic design tokens before styling individual widgets
+- Expose reusable components instead of package-specific details
+- Keep theme variants structurally aligned and test every supported mode
+- Use sufficient contrast and never communicate state through color alone
+- Preserve semantics, focus order, keyboard access, and comfortable hit targets
+- Support large text without clipping, overlap, or inaccessible content
+- Respect reduced-motion settings and provide a meaningful static state
+- Use motion to explain relationships, state changes, or feedback
+- Keep durations restrained and avoid competing or perpetual animations
+- Pause and dispose controllers, listeners, and animations with their owner
+- Build layouts from constraints and content rather than named device models
+- Choose breakpoints where the composition needs to change
+- Preserve content priority instead of scaling an entire interface uniformly
+- Reserve final content dimensions in loading and media placeholders
+- Optimize image, font, Lottie, and Rive assets before shipping them
+- Bundle critical visual assets and declare only the font weights in use
+- Minimize rebuilds, overdraw, clipping, and expensive work inside frames
+- Profile animation and scrolling on representative physical devices
+- Test components across themes, locales, text scales, constraints, and motion settings
+- Use golden tests selectively and pair them with semantic and behavioral tests

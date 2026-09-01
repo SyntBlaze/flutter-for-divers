@@ -1,0 +1,22 @@
+[
+  "Design as though application code, bundled assets, runtime memory, and local traffic metadata can be inspected",
+  "Keep privileged secrets and final authorization decisions on trusted services",
+  "Constrain public client identifiers by audience, platform, redirect URI, API scope, quota, and server policy where supported",
+  "Scan source, history, configuration, generated output, and release artifacts for secrets, then revoke real exposures",
+  "Keep credentials and sensitive payloads out of logs by allowlisting fields and redacting before any sink receives an event",
+  "Disable verbose network and authentication logging in release builds and test failure paths for leakage",
+  "Treat every deep-link route and parameter as attacker-controlled, even when the link is verified",
+  "Require a current authenticated and authorized context before a link can perform a sensitive action",
+  "Prefer a system browser or platform authorization session over an embedded WebView for authentication",
+  "Load only expected secure origins in WebViews and expose the smallest possible native bridge",
+  "Repeat validation, authorization, entitlement, ownership, sequencing, and rate-limit checks on the server",
+  "Use reviewed authenticated encryption with secure random keys and nonces rather than designing a custom scheme",
+  "Protect encryption keys with platform facilities and keep keys separate from ciphertext and ordinary preferences",
+  "Minimize retained sensitive data because encryption does not eliminate exposure on an unlocked compromised device",
+  "Use short-lived, narrowly scoped access credentials and enforce expiry and revocation on the server",
+  "Revalidate restored sessions after long inactivity and before high-risk actions, then fail closed on an authoritative rejection",
+  "Clear credentials, caches, WebView state, queued work, and user-scoped memory on logout or account change",
+  "Request permissions in context at the narrowest supported scope and retain only the data the feature needs",
+  "Keep core behavior useful after denial and review manifests, entitlements, plugins, and SDKs for unused access",
+  "Test security controls against crafted inputs, modified client behavior, stale state, compromised-device assumptions, and server rejection"
+]

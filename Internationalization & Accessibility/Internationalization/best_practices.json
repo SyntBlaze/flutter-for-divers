@@ -1,0 +1,16 @@
+[
+  "Model supported languages with accurate language, script, and region subtags",
+  "Keep locale-dependent lookups inside a context below `Localizations`",
+  "Register only delegates the application needs and keep their support declarations consistent",
+  "Use Flutter's maintained Material, Cupertino, and Widgets localization delegates",
+  "Treat the template ARB as a reviewed interface for translators and generated code",
+  "Use generated `AppLocalizations` getters and methods instead of scattering raw keys or strings",
+  "Make localization generation reproducible locally and in continuous integration",
+  "Format dates and numbers only at the presentation boundary",
+  "Pass structured placeholders into translated messages rather than concatenating fragments",
+  "Provide complete plural and selection variants, including a safe `other` case",
+  "Define locale resolution and fallback behavior as explicit product policy",
+  "Test language-only, script-specific, region-specific, unsupported, and changing locales",
+  "Review translations in real layouts with long text, right-to-left scripts, and accessibility text scaling",
+  "Keep untranslated-message reporting visible in development and release quality checks"
+]

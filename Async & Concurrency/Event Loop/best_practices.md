@@ -1,0 +1,16 @@
+## Best Practices
+
+- Keep every event-loop callback short and bounded
+- Use microtasks only when work must finish before the next event
+- Avoid recursive or unbounded microtask scheduling
+- Use `Future.microtask()` when callers need a future value or error
+- Treat timer durations as minimum delays rather than execution deadlines
+- Cancel one-shot timers when their pending callback is no longer valid
+- Cancel periodic timers as part of the lifecycle that owns them
+- Use tickers or scheduler callbacks for animation instead of periodic timers
+- Use frame callbacks only for work that belongs to the frame lifecycle
+- Use post-frame callbacks for one-time work requiring completed layout
+- Check lifecycle validity before acting from a delayed or post-frame callback
+- Profile long frames and event-loop stalls before choosing a concurrency strategy
+- Move substantial CPU-bound work off the UI isolate when transfer costs justify it
+- Remember that `async`, futures, timers, and microtasks do not make synchronous work parallel

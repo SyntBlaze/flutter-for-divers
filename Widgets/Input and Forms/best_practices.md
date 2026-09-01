@@ -1,0 +1,22 @@
+## Best Practices
+
+- Keep the `FormState` access path stable and validate only at meaningful times
+- Call `FormFieldState.didChange` whenever a custom field's value changes
+- Use one authoritative source for `TextFormField` text and dispose owned resources
+- Configure `TextField` input type, action, autofill, and semantics for the task
+- Prefer higher-level text fields unless custom editing behavior truly requires `EditableText`
+- Keep `Autocomplete` option identity and displayed labels deterministic
+- Position `RawAutocomplete` options accessibly and share focus resources intentionally
+- Represent nullable checkbox state explicitly when enabling tristate
+- Avoid incompatible interactive descendants inside `CheckboxListTile` labels
+- Give every `Radio` option a stable value and one shared group owner
+- Keep `RadioListTile` labels concise and make selection state unmistakable
+- Expose meaningful units and values for `Slider` users and assistive technology
+- Validate `RangeSlider` endpoints as one interval rather than unrelated numbers
+- Use `Switch` for settings whose effect is immediate and reversible
+- Treat `SwitchListTile` as one labeled interactive surface
+- Keep `DropdownButton` values unique and provide empty, disabled, and error states
+- Keep `DropdownMenu` selection, filtering, and displayed text synchronized
+- Use `PopupMenuButton` for concise contextual actions with clear labels
+- Migrate new key-event handling away from `RawKeyboardListener`
+- Scope `KeyboardListener` narrowly and defer command handling to shortcuts and actions

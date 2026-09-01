@@ -1,0 +1,22 @@
+[
+  "Compose one `CustomScrollView` from purpose-specific slivers instead of nesting competing scrollables",
+  "Keep Cupertino navigation titles, routes, and transition tags stable across scrolling and navigation",
+  "Choose `SliverAppBar` scroll flags from the intended interaction and test every resulting state",
+  "Capture removed data and keep indexes aligned when changing a `SliverAnimatedList`",
+  "Give lazy children stable keys and report their new indexes after reordering",
+  "Use `SliverChildListDelegate` only when eagerly creating the complete collection is inexpensive",
+  "Set `hasScrollBody` according to whether the remaining child manages its own scrolling",
+  "Use `SliverFillViewport` for page-like children that intentionally derive extent from the viewport",
+  "Prefer a fixed-extent sliver when every row genuinely shares the same main-axis size",
+  "Select responsive grid geometry and verify minimum usable item widths",
+  "Keep `SliverLayoutBuilder` builders lightweight and driven only by relevant constraint changes",
+  "Provide stable or known item extents when possible to improve list scroll estimation",
+  "Stop unnecessary animations, streams, and focus activity in offstage sliver content",
+  "Avoid animating opacity across large sliver regions when a cheaper localized effect will do",
+  "Use directional sliver padding and account for its contribution to the scrollable extent",
+  "Keep persistent-header delegates deterministic and implement `shouldRebuild` precisely",
+  "Choose a representative prototype whose measured extent is valid for every list child",
+  "Apply safe-area insets once at the meaningful scroll boundary and protect only needed sides",
+  "Group repeated box children under a lazy sliver delegate instead of many adapters",
+  "Enable `SliverVisibility` maintenance flags only for state that is worth retaining"
+]

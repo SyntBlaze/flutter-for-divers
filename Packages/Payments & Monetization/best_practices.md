@@ -1,0 +1,22 @@
+## Best Practices
+
+- Treat the backend or verified entitlement service as the authority for paid access
+- Verify store transaction evidence outside the client before granting durable value
+- Create payment intents and other privileged payment objects on a trusted backend
+- Keep secret keys, webhook credentials, and verification credentials out of the app
+- Grant products through stable entitlement identifiers rather than UI or store-product names
+- Make fulfillment idempotent so repeated transactions, callbacks, and webhooks are harmless
+- Persist transaction and event identifiers before granting consumable value
+- Acknowledge or complete store transactions only after the required processing succeeds
+- Provide an explicit restore flow and reconcile entitlements at sign-in and app startup
+- Handle pending, cancelled, declined, expired, refunded, and revoked states explicitly
+- Keep the purchase UI responsive while preventing accidental duplicate submissions
+- Recover interrupted flows by querying authoritative state instead of trusting the last screen
+- Use provider webhooks or server notifications to reconcile changes that occur off-device
+- Collect only the payment, purchase, advertising, and diagnostic data the product requires
+- Obtain and respect required consent choices before requesting personalized advertising
+- Design ads around content and interaction boundaries, and never obscure navigation or controls
+- Grant rewarded-ad benefits only from the documented completion signal and make the grant idempotent
+- Test approved, declined, cancelled, pending, restored, refunded, duplicate, offline, and timeout paths in sandbox environments
+- Use separate test and production products, credentials, ad units, and backend configuration
+- Monitor verification failures, webhook delays, entitlement mismatches, payment errors, and ad no-fill without logging sensitive data

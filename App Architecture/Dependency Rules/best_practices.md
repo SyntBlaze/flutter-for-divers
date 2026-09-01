@@ -1,0 +1,16 @@
+## Best Practices
+
+- Make dependency direction visible in package and import boundaries
+- Let inner layers own the contracts they need
+- Use plain Dart types for domain concepts
+- Wrap plugins and platform channels with application-owned interfaces
+- Limit widgets to rendering, composition, and forwarding intent
+- Test business rules without a widget test harness
+- Give every mutable value a clear owner and lifetime
+- Expose complete immutable state snapshots
+- Pass required collaborators through constructors or factory inputs
+- Keep the composition root at an outer application boundary
+- Represent I/O behind narrow interfaces
+- Inject time, randomness, and environment access when behavior depends on them
+- Test boundary implementations separately from policy
+- Document and review intentional exceptions

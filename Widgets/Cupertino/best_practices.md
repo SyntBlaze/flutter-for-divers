@@ -1,0 +1,30 @@
+## Best Practices
+
+- Keep action-sheet choices concise and separate the cancel action
+- Pair indeterminate activity with an explanation and prevent duplicate work where appropriate
+- Use alerts sparingly and make every dialog action unambiguous
+- Preserve `CupertinoButton` pressed, disabled, focus, and semantic behavior
+- Keep checkbox state controlled and provide an accessible label
+- Limit context menus to relevant item actions and support alternative discovery
+- Constrain dates and intervals to values the application can accept
+- Declare destructive and default dialog actions truthfully
+- Use full-screen transition widgets only as part of a correctly owned route animation
+- Group related list rows and keep section spacing and separators consistent
+- Keep list-tile content concise and avoid competing tap targets
+- Let route context drive navigation-bar titles and back behavior
+- Coordinate scaffold insets with translucent bars and the on-screen keyboard
+- Preserve platform direction and gesture expectations in page transitions
+- Use stable selection state and uniform item extents for pickers
+- Reserve popup surfaces for popup presentation and verify content contrast
+- Attach scrollbars to the intended scroll position and test touch and pointer input
+- Keep search query, clear action, focus, and results state synchronized
+- Use segmented controls only for small, mutually related option sets
+- Expose slider values semantically and respect the configured range
+- Use stable keys and a controlled group value for sliding segmented controls
+- Use switches for settings that take effect immediately
+- Keep tab destinations stable, concise, and consistently ordered
+- Preserve tab state rather than rebuilding navigation history on every switch
+- Give each tab view a stable navigator and complete route handling
+- Dispose owned text and focus controllers and configure text input semantics
+- Restrict timer-picker units and intervals to valid durations
+- Test Cupertino interfaces with dynamic type, VoiceOver, safe areas, keyboards, and localization

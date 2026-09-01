@@ -1,0 +1,14 @@
+[
+  "Model every `Checkbox` state explicitly and provide a clear accessible label",
+  "Keep `Radio` values unique and place group selection under one owner",
+  "Expose `Slider` values with meaningful precision, units, and semantics",
+  "Validate `RangeSlider` endpoints together as one interval",
+  "Use `Switch` only for immediate settings and communicate the resulting state",
+  "Configure `TextField` input behavior for the task and dispose owned resources",
+  "Give `TextFormField` one text owner and validate at intentional interaction points",
+  "Keep `SearchBar` actions, query state, and keyboard behavior consistent",
+  "Handle loading, empty, error, and stale-result states in `SearchAnchor`",
+  "Validate date bounds and selectable dates before presenting `DatePickerDialog`",
+  "Respect regional time conventions and distinguish cancel from confirm in `TimePickerDialog`",
+  "Test every control with touch, keyboard, text scaling, and assistive technology"
+]

@@ -1,0 +1,14 @@
+[
+  "Keep widget fields immutable and constructor-focused",
+  "Keep build methods declarative and free of side effects",
+  "Use `StatefulWidget` only when state belongs to that tree location",
+  "Check `mounted` before using a `State` after an asynchronous gap",
+  "Release controllers, focus nodes, and subscriptions in `dispose`",
+  "Make inherited update notifications as selective as the data allows",
+  "Use aspects to avoid unrelated rebuilds with `InheritedModel`",
+  "Dispose an owned notifier at the layer that created it",
+  "Use the framework's parent-data widgets instead of mutating parent data directly",
+  "Prefer composition before implementing a custom render-object widget",
+  "Match the render-object widget base class to its actual child model",
+  "Treat preferred size as a parent-consumed hint, not a layout guarantee"
+]

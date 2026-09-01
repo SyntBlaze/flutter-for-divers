@@ -1,0 +1,16 @@
+[
+  "Compose mixed scroll effects as slivers in one `CustomScrollView` and adapt box children explicitly",
+  "Attach the supplied sheet controller to the built scrollable and keep minimum, initial, and maximum extents coherent",
+  "Build large grids lazily and define predictable tile geometry with the appropriate grid delegate",
+  "Build long lists lazily, preserve item identity, and give each scrollable a clear owner",
+  "Use `NestedScrollView` for genuinely linked outer and inner positions and handle sliver overlap intentionally",
+  "Listen for the narrowest notification type and depth, and stop bubbling only when another listener must not receive it",
+  "Own and dispose a `PageController` with the state that owns programmatic page navigation",
+  "Keep `PageView` pages stable and make page snapping, direction, and state retention deliberate",
+  "Scope `PrimaryScrollController` so only the intended primary scrollable inherits and attaches to it",
+  "Await refresh work, support vertical overscroll, and expose clear loading and failure feedback",
+  "Give reorderable children stable keys and update the model immediately and correctly in `onReorder`",
+  "Connect `Scrollbar` to the intended position and test thumb visibility and interaction on each target platform",
+  "Override scroll behavior locally while retaining expected platform input, physics, and visual affordances",
+  "Reserve `SingleChildScrollView` for bounded, relatively small content and avoid expensive intrinsic work inside it"
+]

@@ -1,0 +1,14 @@
+## Best Practices
+
+- Cancel owned timers, listeners, subscriptions, and requests during disposal
+- Check `mounted` or `context.mounted` after asynchronous gaps where appropriate
+- Reject stale completions even when underlying work cannot be cancelled
+- Obtain inherited dependencies from a context below their provider
+- Replace immutable snapshots and collections instead of mutating in place
+- Select the smallest state slice each consumer requires
+- Hoist invariant widget subtrees out of reactive builders
+- Keep build methods pure, fast, and safe to repeat
+- Trigger effects from explicit events or lifecycle-aware listeners
+- Pass durable values or callbacks instead of retaining `BuildContext`
+- Separate UI rendering, application rules, and data access
+- Test disposal, rapid replacement, duplicate events, and out-of-order completion

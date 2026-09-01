@@ -1,0 +1,22 @@
+## Best Practices
+
+- Define the owner, source, lifetime, and freshness contract for every cached value
+- Keep memory caches bounded and clear them when their owning scope ends
+- Coalesce concurrent misses for the same key instead of starting duplicate loads
+- Treat disk cache contents as disposable, versioned, and potentially corrupt
+- Write disk entries atomically and enforce explicit capacity and eviction policies
+- Honor HTTP freshness, validation, privacy, and `Vary` semantics as one protocol contract
+- Store an `ETag` with the exact response variant it validates
+- Use conditional requests to revalidate without treating `304 Not Modified` as a new representation
+- Build cache keys from every input that can change the selected data
+- Invalidate or update related entries as part of the mutation workflow
+- Deduplicate background revalidation and reject out-of-order refresh results
+- Represent freshness, loading, and refresh failure separately when the UI needs those distinctions
+- Keep optimistic state identifiable and retain enough information for deterministic recovery
+- Do not discard a successful intervening change when rolling back an earlier optimistic mutation
+- Use a durable local source of truth and persist the sync queue for offline-first features
+- Make synchronized mutations idempotent and preserve operation ordering where the domain requires it
+- Record server versions or other causality metadata needed to detect concurrent edits
+- Resolve conflicts with explicit domain rules and surface ambiguity rather than silently losing data
+- Partition and clear user-scoped cached data on logout or account change
+- Test eviction, expiry, revalidation, corruption, offline restart, retry, races, and conflict paths

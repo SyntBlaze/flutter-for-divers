@@ -1,0 +1,17 @@
+## Best Practices
+
+- Prefer semantic gesture callbacks over raw pointer handling for application interactions
+- Dispose recognizers owned outside the normal widget-managed lifecycle
+- Release pointer routes and reset sequence state on completion or cancellation
+- Use movement tolerances and deadlines appropriate to the gesture
+- Do not perform tap actions before the recognizer has won when they conflict with other gestures
+- Provide immediate visual feedback without treating it as final gesture acceptance
+- Keep high-frequency drag update callbacks lightweight
+- Make scale updates robust to pointers joining or leaving the gesture
+- Let the gesture arena resolve competition instead of manually racing callbacks
+- Handle both acceptance and rejection as normal recognizer lifecycle outcomes
+- Use a `GestureArenaTeam` only for deliberate recognizer cooperation
+- Avoid overlapping gesture definitions whose outcome is surprising or inaccessible
+- Use `GestureDetector` for standard tap, press, drag, and scale interactions
+- Use `RawGestureDetector` when recognizer factories or custom recognizers are required
+- Test gesture competition, cancellation, multitouch, and supported device kinds

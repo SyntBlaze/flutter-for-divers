@@ -1,0 +1,19 @@
+[
+  "Use the closest intended `Navigator` and make root-versus-nested selection explicit",
+  "Keep imperative navigation calls at clear interaction or coordination boundaries",
+  "Treat route lifecycle, arguments, and returned results as part of the route's contract",
+  "Customize `PageRoute` only when transition, opacity, or state-retention behavior truly differs",
+  "Use `MaterialPageRoute` for conventional Material screen transitions",
+  "Preserve gesture-driven back navigation when using `CupertinoPageRoute`",
+  "Use a descendant context and handle a missing `ModalRoute` safely",
+  "Give dismissible popup barriers clear semantics and accessible labels",
+  "Keep route names stable and decode untyped `RouteSettings.arguments` at one boundary",
+  "Register each `RouteObserver` with the navigator whose changes it must report",
+  "Balance every `RouteAware` subscription with an unsubscribe call",
+  "Create a navigator key once and avoid using it as a general substitute for context",
+  "Design stack mutations around the back-navigation history users should experience",
+  "Guard pushes against repeated taps and await them only when their results matter",
+  "Pop from the intended navigator and return values that match the route's result type",
+  "Replace routes only when the outgoing destination should no longer exist in history",
+  "Remove routes by exact identity and verify the effects on lifecycle and awaiting callers"
+]

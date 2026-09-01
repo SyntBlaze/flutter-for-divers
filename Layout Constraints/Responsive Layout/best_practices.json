@@ -1,0 +1,16 @@
+[
+  "Base reusable component layout on local constraints from `LayoutBuilder`",
+  "Use `MediaQuery` for view environment data rather than as a substitute for parent constraints",
+  "Read only the environmental aspect needed by a subtree when practical",
+  "Choose breakpoints where content requires a structural change",
+  "Name width classes by layout intent and keep their thresholds centralized",
+  "Preserve content priority instead of uniformly scaling the complete interface",
+  "Keep adaptive navigation and interaction changes predictable across configurations",
+  "Apply `SafeArea` at deliberate screen or region boundaries",
+  "Distinguish `padding`, `viewPadding`, and `viewInsets` before adding edge spacing",
+  "Make focused fields reachable through scrolling when the keyboard reduces usable space",
+  "Treat display-feature bounds as unavailable or separating space according to their type and state",
+  "Keep important controls and reading flow away from hinges and folds",
+  "Test intermediate sizes, breakpoint edges, split-screen windows, large text, keyboards, and rotation",
+  "Preserve state and focus when rebuilding a different responsive composition"
+]

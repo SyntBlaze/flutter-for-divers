@@ -1,0 +1,16 @@
+## Best Practices
+
+- Choose breakpoints where the content or interaction model needs to change
+- Use `LayoutBuilder` or local constraints for component-level decisions
+- Keep the primary task and essential actions available at compact widths
+- Add panes and persistent controls progressively as space becomes useful
+- Constrain line length and organize expanded layouts into purposeful regions
+- Preserve destination identity, selection, and nested state across navigation variants
+- Treat orientation as a geometry change rather than a device category
+- Apply safe-area padding once at the boundary that owns edge avoidance
+- Model folds and hinges as unavailable or separating display features
+- Test desktop layouts by dragging through widths, not only at maximized size
+- Make browser resizing trigger deterministic reflow without horizontal overflow
+- Test just below, at, and just above every breakpoint
+- Include large text, long localized strings, keyboard navigation, and restoration in responsive tests
+- Keep responsive decisions centralized enough to stay consistent but local enough to follow actual constraints

@@ -1,0 +1,15 @@
+[
+  "Keep hit-test geometry consistent with layout and paint geometry",
+  "Reject out-of-bounds positions before traversing expensive box subtrees",
+  "Use the sliver protocol for scrolling children instead of approximating them as boxes",
+  "Use `BoxHitTestResult` helpers when adding offsets or paint transforms",
+  "Preserve coordinate transforms so dispatched events expose correct local positions",
+  "Test overlapping children from visually frontmost to backmost",
+  "Make child traversal order agree with the render object's actual paint order",
+  "Return true from `hitTestSelf()` only for an intentionally interactive target",
+  "Add the current target to the path only when its hit-test contract is satisfied",
+  "Avoid allocations and unrelated state changes in frequently executed hit-test code",
+  "Keep custom transform logic invertible and handle transforms that cannot be inverted",
+  "Treat hit testing as route construction, not as gesture acceptance",
+  "Verify custom hit testing with overlapping, clipped, transformed, and scrolled content"
+]

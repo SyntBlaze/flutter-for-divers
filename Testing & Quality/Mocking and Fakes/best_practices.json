@@ -1,0 +1,15 @@
+[
+  "Choose a double from the behavior the test must control or observe",
+  "Prefer state and outcome assertions unless an interaction is itself part of the contract",
+  "Verify only meaningful calls and avoid asserting incidental call order",
+  "Keep stub responses explicit, local, and specific to the scenario",
+  "Use small handwritten fakes when realistic state makes tests easier to read",
+  "Document intentional differences between a fake and its production implementation",
+  "Advance virtual time explicitly and ensure no scheduled work leaks past the test",
+  "Inject a clock instead of reading system time directly in business logic",
+  "Use fixed local image data and restore global image or HTTP overrides after each test",
+  "Keep fake repositories deterministic and faithful to their public contracts",
+  "Create fresh mutable doubles per test or reset them during teardown",
+  "Avoid live networks, real clocks, randomness, and process-wide mutable state in isolated tests",
+  "Keep test-only controls out of production interfaces unless they represent a genuine abstraction"
+]

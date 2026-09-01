@@ -1,0 +1,13 @@
+[
+  "Prefer native controls and add `Semantics` only when their accessible meaning needs refinement",
+  "Exclude only decorative or intentionally replaced descendant semantics",
+  "Merge descendants only when users should perceive and operate them as one item",
+  "Block background semantics while a modal or obscuring surface is active",
+  "Keep semantic indexes stable and consistent with logical reading order",
+  "Write short, localized tooltip messages and test their semantics",
+  "Manage long-lived focus nodes outside `build` and dispose nodes you own",
+  "Use focus scopes to contain traversal and restore focus within meaningful regions",
+  "Respect platform conventions and text-editing bindings when defining shortcuts",
+  "Keep actions contextual, reusable, and independent of a particular input device",
+  "Test with screen readers, keyboard-only navigation, large text, and platform accessibility settings"
+]

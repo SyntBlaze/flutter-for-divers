@@ -1,0 +1,13 @@
+[
+  "Use gesture callbacks for semantic actions and raw pointer events only for device-level requirements",
+  "Track streams by pointer identifier when simultaneous pointers are possible",
+  "Keep pointer callbacks lightweight and batch expensive visual work into the frame pipeline",
+  "Handle both up and cancel paths so pressed, dragged, or captured state cannot become stuck",
+  "Read local coordinates after transforms instead of applying global deltas blindly",
+  "Let standard scrollables handle wheel input unless custom behavior is essential",
+  "Resolve competing pointer-signal consumers rather than allowing nested handlers to react twice",
+  "Treat hover and cursors as enhancements, never as the only way to discover or operate a control",
+  "Use familiar platform cursors and verify overlapping `MouseRegion` behavior",
+  "Test mouse, touch, stylus, wheel, and trackpad paths independently on supported platforms",
+  "Include keyboard and accessibility alternatives for every essential pointer-driven action"
+]

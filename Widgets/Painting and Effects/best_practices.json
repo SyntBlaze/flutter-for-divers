@@ -1,0 +1,17 @@
+[
+  "Clip `BackdropFilter` to the smallest region that actually needs filtering",
+  "Use `ClipOval` when an oval or circular boundary is the intended visible shape",
+  "Cache stable paths and implement `shouldReclip` carefully for `ClipPath`",
+  "Prefer `ClipRect` for rectangular clipping instead of a more complex custom path",
+  "Keep `ClipRRect` geometry consistent with the decoration beneath it",
+  "Scope `ColorFiltered` around only the content that needs color processing",
+  "Keep `CustomPainter.paint` bounded and drive repaints with a focused `Listenable`",
+  "Use explicit padding alongside `DecoratedBox` when decoration content needs inset space",
+  "Account for unchanged layout bounds when positioning with `FractionalTranslation`",
+  "Avoid wrapping large subtrees in changing `Opacity` values and manage interaction at zero alpha",
+  "Use `PhysicalModel` elevation and clipping only where the physical surface contributes meaning",
+  "Keep `PhysicalShape` clippers stable and paths no more complex than necessary",
+  "Use `RotatedBox` for quarter turns that must influence the surrounding layout",
+  "Choose `ShaderMask` blend modes explicitly and keep animated shader regions focused",
+  "Use `Transform` for visual geometry changes and a layout widget when neighbors must move"
+]

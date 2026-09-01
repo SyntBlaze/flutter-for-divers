@@ -1,0 +1,16 @@
+## Best Practices
+
+- Use federation when platforms need independent ownership or release cadence
+- Keep the app-facing API platform-neutral and cohesive
+- Make the platform interface an explicit, versioned contract
+- Prefer endorsed implementations when one package family owns the default
+- Separate engine attachment from activity or view-controller attachment
+- Respect each host platform's main-thread and lifecycle requirements
+- Check browser capabilities and return explicit unsupported errors on the web
+- Declare native dependencies, entitlements, and minimum platform versions explicitly
+- Release native handles, listeners, and callbacks when a plugin detaches
+- Test Linux integrations against representative distributions and library versions
+- Register each plugin once per engine and make teardown safe
+- Treat `GeneratedPluginRegistrant` as generated build output
+- Test the public contract against every supported platform implementation
+- Return unavailable capabilities and native failures through deliberate error contracts

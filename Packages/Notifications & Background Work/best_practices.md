@@ -1,0 +1,20 @@
+## Best Practices
+
+- Ask for notification permission in context and explain the user benefit
+- Keep the application useful when notification permission is denied
+- Treat platform notification settings as user-owned preferences
+- Create stable channels and categories around user-facing notification types
+- Avoid changing channel semantics after users have configured them
+- Route every message and action through one typed payload parser
+- Validate payload versions, identifiers, destinations, and authorization
+- Keep sensitive data out of notification titles, bodies, and payloads
+- Persist important events instead of treating push delivery as a job queue
+- Make background operations idempotent and safe after partial completion
+- Use stable task identifiers to prevent duplicate scheduling and processing
+- Design for operating-system delays, cancellation, and missed execution windows
+- Retry only transient failures with bounded backoff and a clear terminal state
+- Keep background callbacks short, resource-conscious, and independently initialized
+- Pass identifiers across isolates and reload authoritative state inside the task
+- Persist task inputs and progress before depending on in-memory state
+- Report task completion and release subscriptions, clients, and other resources
+- Test permission states, delivery modes, process restarts, duplicate events, and user actions

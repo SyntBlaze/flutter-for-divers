@@ -1,0 +1,13 @@
+## Best Practices
+
+- Let the painting framework manage layer attachment and lifecycle
+- Retain and update compatible layers when custom painting can reuse them
+- Keep layer child order consistent with visual paint order
+- Use repaint boundaries only where isolating repaint work is beneficial
+- Avoid unnecessary save layers, opacity groups, and compositing effects
+- Prefer the simplest clip shape that meets the visual requirement
+- Constrain filtered regions to limit offscreen rendering cost
+- Use backdrop filters deliberately because they read already-painted content
+- Manage external texture and platform-view lifecycles outside the layer itself
+- Reuse one `LayerLink` for each intended leader-follower relationship
+- Profile real frames before optimizing the layer tree

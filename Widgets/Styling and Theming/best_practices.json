@@ -1,0 +1,13 @@
+[
+  "Keep `Theme` overrides local and obtain themed values from a context below the override",
+  "Treat `ThemeData` as a coordinated design system instead of a collection of unrelated constants",
+  "Use `DefaultTextStyle` for subtree defaults and explicit styles only for meaningful exceptions",
+  "Group consistently styled icons under an `IconTheme`",
+  "Use focused `MediaQuery` accessors and honor text scaling and accessibility settings",
+  "Use directional layout APIs so interfaces adapt naturally to right-to-left text",
+  "Localize every user-facing string and test fallback and pluralization behavior",
+  "Verify selection and cursor colors for contrast in every supported theme",
+  "Centralize recurring spacing values and use directional padding where meaning is directional",
+  "Use dividers only where a visible separator clarifies grouping or hierarchy",
+  "Test themes together with locale, directionality, text scaling, contrast, and viewport changes"
+]

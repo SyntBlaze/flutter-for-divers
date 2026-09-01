@@ -1,0 +1,18 @@
+[
+  "Keep one intentional ThemeData source for each supported application mode",
+  "Base component defaults on semantic ColorScheme roles",
+  "Test foreground and background role pairs for readable contrast",
+  "Preserve TextTheme role semantics even when visual values are customized",
+  "Let IconThemeData provide consistent defaults and override only for meaning or state",
+  "Centralize repeated app bar decisions in AppBarTheme",
+  "Use modern per-button theme classes for new Material button APIs",
+  "Model hovered, focused, pressed, selected, and disabled appearances explicitly",
+  "Keep button variants visually distinct while sharing shape, spacing, and state rules",
+  "Make low-emphasis text buttons retain accessible targets and feedback",
+  "Design input decoration as a complete set of normal, focused, disabled, and error states",
+  "Choose one navigation component deliberately and theme selection consistently",
+  "Keep dialogs and snack bars aligned with the same surface and typography system",
+  "Implement immutable custom ThemeExtension values with correct copying and interpolation",
+  "Use local Theme overrides only for genuine subtree-level variation",
+  "Exercise light, dark, high text scale, disabled, focused, and animated theme transitions in tests"
+]

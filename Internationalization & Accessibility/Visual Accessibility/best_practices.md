@@ -1,0 +1,14 @@
+## Best Practices
+
+- Design layouts to wrap and reflow instead of locking text into fixed heights
+- Use the ambient `TextScaler` and test nonlinear scaling behavior
+- Provide a deliberate high-contrast treatment where the default theme is insufficient
+- Check contrast for content, controls, boundaries, and every interaction state
+- Test dynamic type with long translations and realistic data
+- Make the full interactive region generous without causing targets to overlap
+- Keep custom controls at least as operable as the platform and design-system baseline
+- Show a persistent, high-contrast focus indicator for keyboard and switch navigation
+- Honor reduced-motion preferences while retaining essential feedback and orientation
+- Allow bold text to affect typography without breaking layout or obscuring hierarchy
+- Verify visual preferences in combination, not only one setting at a time
+- Test on small screens, at large text sizes, in both brightness modes, and with alternate input

@@ -1,0 +1,16 @@
+[
+  "Treat task runners as ownership boundaries, even when they share an OS thread",
+  "Keep platform callbacks short and return control to the host event loop",
+  "Keep synchronous UI-isolate work within the device's frame budget",
+  "Use traces to distinguish UI-thread stalls from raster-thread stalls",
+  "Move blocking file and resource work away from frame-critical runners",
+  "Post work to the owning runner instead of accessing thread-affine state directly",
+  "Preserve asynchronous handoffs between frame stages",
+  "Use Flutter's scheduler rather than synthesizing application frame timing from timers",
+  "Make platform-message handlers asynchronous when native work may block",
+  "Keep channel payloads small and avoid repeated large serialization",
+  "Use background isolates for measured CPU bottlenecks, not every asynchronous operation",
+  "Send immutable or transferable data across isolate boundaries",
+  "Do not access widgets, render objects, or root-isolate state from a background isolate",
+  "Profile on representative devices before changing concurrency or scheduling"
+]

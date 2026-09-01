@@ -1,0 +1,19 @@
+[
+  "Document whether every exposed stream is single-subscription or broadcast",
+  "Give each `StreamController` one clear owner and close it when that owner ends",
+  "Use broadcast streams only for genuinely shared, live event sources",
+  "Preserve single-subscription semantics for sequences with one consumer or resource owner",
+  "Store lifecycle-bound subscriptions and cancel them during disposal",
+  "Use `async*` when sequential asynchronous production is clearer than manual controller wiring",
+  "Put generator resource cleanup in `finally` so cancellation releases it",
+  "Use `yield*` to forward a stream while preserving backpressure and cancellation behavior",
+  "Provide deliberate `onError` and `onDone` behavior at terminal subscriptions",
+  "Avoid long subscription pauses on sources that must buffer",
+  "Balance every pause and resume path, including error and disposal paths",
+  "Await cancellation before reopening or deleting a resource that the stream owns",
+  "Keep `map()` and `where()` callbacks fast, deterministic, and free of blocking work",
+  "Define debounce timing, leading or trailing semantics, and done behavior in tests",
+  "Pass an explicit equality function to `distinct()` when domain equality differs from `==`",
+  "Test data, error, done, pause, resume, and cancellation paths independently",
+  "Avoid synchronous stream controllers unless reentrant delivery is understood and required"
+]

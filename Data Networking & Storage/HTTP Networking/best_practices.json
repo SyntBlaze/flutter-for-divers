@@ -1,0 +1,17 @@
+[
+  "Reuse a client within an explicit owner scope to benefit from connection pooling",
+  "Keep middleware small, ordered, observable, and safe against recursive requests",
+  "Represent request configuration with typed, immutable options and deliberate defaults",
+  "Classify transport, protocol, decoding, cancellation, and timeout outcomes separately",
+  "Construct query strings with URI-aware encoders rather than string concatenation",
+  "Redact authorization, cookies, tokens, and sensitive payload metadata from logs",
+  "Stream large request bodies and let the multipart encoder generate boundaries",
+  "Stream downloads to temporary files and atomically expose only validated results",
+  "Propagate cancellation from the caller through transport and post-processing",
+  "Set operation-specific timeouts and preserve an overall deadline across attempts",
+  "Retry only transient failures when the method and body are safe to replay",
+  "Use idempotency keys or conditional requests for mutations that may be retried",
+  "Honor `Retry-After` and apply capped exponential backoff with jitter",
+  "Place strict limits on attempts, elapsed time, response size, and redirect behavior",
+  "Test middleware ordering, malformed responses, partial streams, cancellation, timeout, and retry exhaustion"
+]

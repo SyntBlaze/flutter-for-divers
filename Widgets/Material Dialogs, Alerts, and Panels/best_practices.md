@@ -1,0 +1,14 @@
+## Best Practices
+
+- Keep `AlertDialog` content focused on one decision and make long content scroll safely
+- Use `SimpleDialog` for concise choices and return the selected value through the route
+- Give a custom `Dialog` bounded layout, meaningful semantics, predictable focus, and an obvious dismissal path
+- Keep `AboutDialog` application identity, version, legal text, and license sources accurate
+- Choose persistent versus modal bottom-sheet behavior from whether background interaction should remain available
+- Treat `ExpansionPanel` state as controlled parent state and preserve stable panel identity
+- Use storage keys or controlled state when `ExpansionTile` expansion must survive scrolling and rebuilds
+- Queue and replace `SnackBar` messages deliberately instead of flooding `ScaffoldMessenger`
+- Keep `Banner` labels short, legible, and secondary to the underlying content
+- Provide a clear resolution or dismissal action for every persistent `MaterialBanner`
+- Use `Drawer` for destinations and supporting navigation, then close it before changing routes
+- Test overlays and panels with keyboard navigation, screen readers, large text, back navigation, restoration, and narrow screens

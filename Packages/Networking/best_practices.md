@@ -1,0 +1,22 @@
+## Best Practices
+
+- Keep transport code out of widgets
+- Expose domain-friendly repositories instead of raw client responses
+- Use typed request, response, and failure models
+- Validate status codes and payloads before mapping their data
+- Model transport, server, authentication, and parsing failures separately
+- Set explicit connection, send, and response timeouts where supported
+- Cancel obsolete requests when screens, searches, or filters change
+- Prevent stale responses from overwriting newer results
+- Retry only transient failures and apply bounded backoff with jitter
+- Retry state-changing operations only when they are safe or idempotent
+- Centralize base URLs, headers, serialization, and cross-cutting policies
+- Coordinate concurrent authentication failures through one refresh operation
+- Store credentials securely and never log tokens or sensitive payloads
+- Treat connectivity signals as hints rather than proof that an API is reachable
+- Design offline behavior and cache invalidation deliberately
+- Paginate large collections and guard against duplicate page requests
+- Close clients, sockets, controllers, and subscriptions with their lifecycle
+- Reconnect real-time channels with bounded backoff and restore subscriptions
+- Keep generated clients reproducible and regenerate them after schema changes
+- Test success, failure, timeout, cancellation, malformed data, and race conditions

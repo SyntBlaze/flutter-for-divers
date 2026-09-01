@@ -1,0 +1,12 @@
+[
+  "Use `MouseRegion` for hover feedback and cursor selection",
+  "Treat hover as optional enhancement rather than the only way to reveal an action",
+  "Keep hover callbacks lightweight because pointer movement can be frequent",
+  "Clear transient visual state when a tracked region receives an exit",
+  "Expect geometry and render-tree changes to update the annotation path",
+  "Choose cursors that match the interaction users can actually perform",
+  "Prefer platform cursor constants for familiar interaction cues",
+  "Keep overlapping regions' opacity behavior deliberate",
+  "Avoid using mouse-only behavior as a substitute for keyboard and touch access",
+  "Test enter, hover, exit, cursor, and region-removal behavior on desktop and web"
+]

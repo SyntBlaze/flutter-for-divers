@@ -1,0 +1,16 @@
+[
+  "Use `const` constructors for genuinely static widget configurations",
+  "Extract focused widgets when they clarify ownership or narrow dependency scope",
+  "Select the smallest stable state value that fully determines the consumer's output",
+  "Place reactive builders immediately above the subtree that changes",
+  "Read inherited state close to the descendants that consume it",
+  "Pass value-independent subtrees through `ValueListenableBuilder.child`",
+  "Pass animation-independent subtrees through `AnimatedBuilder.child`",
+  "Keep `InheritedWidget.updateShouldNotify` aligned with the values exposed to dependents",
+  "Add keys only when element identity must survive insertion, removal, reordering, or movement",
+  "Never create changing keys during `build` merely to silence a state or rendering problem",
+  "Move parsing, sorting, filtering, allocation-heavy transformations, and I/O out of hot `build` paths",
+  "Memoize derived work only when inputs and invalidation rules are explicit",
+  "Measure rebuild frequency and duration in profile mode before and after an optimization",
+  "Treat rebuilding as normal; optimize only rebuilds that are unexpectedly broad, frequent, or expensive"
+]

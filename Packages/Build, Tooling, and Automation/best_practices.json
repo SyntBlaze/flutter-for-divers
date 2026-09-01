@@ -1,0 +1,21 @@
+[
+  "Pin the Flutter SDK, Dart SDK, package lockfiles, and automation tool versions",
+  "Run generators from declared configuration instead of undocumented local commands",
+  "Document the owner, inputs, outputs, and invocation for every generated artifact",
+  "Choose one policy for generated files and enforce it consistently in reviews and CI",
+  "Fail CI when clean regeneration produces an uncommitted diff",
+  "Keep generated output separate from hand-authored code and never edit it directly",
+  "Make automation scripts deterministic, non-interactive, and safe to run repeatedly",
+  "Cache dependencies and build products only when cache keys include every relevant input",
+  "Use the same checked-in commands locally and in CI",
+  "Scope monorepo scripts to dependency order and affected packages where correctness permits",
+  "Require analysis and tests at both package boundaries and representative integrated-app boundaries",
+  "Keep flavor names and non-secret mappings declarative while injecting secrets through protected environments",
+  "Separate signing credentials and production publishing authority from ordinary build jobs",
+  "Generate icons and splash screens from approved high-resolution sources and review every platform result",
+  "Review generated native configuration whenever platform targets or toolchains change",
+  "Publish immutable, traceable artifacts with source revision, toolchain, and configuration metadata",
+  "Stage code-push rollouts, define health signals, and keep a tested rollback path",
+  "Restrict code-push patches to compatible changes allowed by platform policy and verify them on release builds",
+  "Retain logs for generation, signing, publishing, promotion, patching, and rollback actions"
+]

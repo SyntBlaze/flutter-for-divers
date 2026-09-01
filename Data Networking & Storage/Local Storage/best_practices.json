@@ -1,0 +1,20 @@
+[
+  "Classify each item by sensitivity, durability, ownership, size, structure, and access pattern before choosing storage",
+  "Keep storage behind an application-owned boundary so platform APIs and database engines can change",
+  "Use key-value storage only for a bounded set of compact, non-sensitive settings and flags",
+  "Store only necessary secret material in secure storage and remove it when its authorization lifecycle ends",
+  "Use platform directory APIs and never construct important paths from hard-coded device locations",
+  "Write important files to a sibling temporary target, flush and validate when required, then replace atomically where supported",
+  "Document backup, export, restore, retention, and deletion rules for durable user-relevant files",
+  "Assume temporary and cache files can disappear between any two operations",
+  "Bound cache size and age, and make cache misses and eviction ordinary recoverable states",
+  "Use transactions for related database changes that must preserve an invariant",
+  "Separate stored records from domain entities when persistence annotations or schema evolution would leak across boundaries",
+  "Validate document shape on every boundary instead of treating flexible schema as absent schema",
+  "Assign explicit versions to stored formats and make migrations incremental, deterministic, observable, and failure-safe",
+  "Test migrations with representative data from every supported prior version before release",
+  "Treat local files and database records as untrusted input and handle corruption without destructive recovery by default",
+  "Keep encryption keys separate from encrypted data and protect them with operating-system facilities when available",
+  "Plan key generation, access control, rotation, backup, restore, revocation, and unrecoverable loss before encrypting production data",
+  "Minimize retained personal data and erase account-scoped data and keys according to explicit logout and deletion policies"
+]

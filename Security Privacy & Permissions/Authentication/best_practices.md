@@ -1,0 +1,22 @@
+## Best Practices
+
+- Use Authorization Code with PKCE for public native clients
+- Open authorization requests in the system browser or a platform authorization session
+- Never embed a client secret that is expected to remain confidential
+- Register exact redirect URIs and validate the returned `state`
+- Use OpenID Connect rather than ad hoc OAuth claims when authenticating a user
+- Generate and validate a fresh `nonce` for each OpenID Connect authorization request
+- Keep access tokens short-lived, least-privileged, and out of logs
+- Send tokens only to their intended issuer or resource audience
+- Store refresh tokens only when silent renewal is necessary and protect them with platform-backed secure storage
+- Rotate refresh tokens and treat detected reuse as a session-compromise signal
+- Use ID tokens only at the client for which they were issued
+- Validate JWTs against trusted issuer metadata and an explicit algorithm allowlist
+- Verify signature, issuer, audience, expiry, not-before time, and token-specific claims server-side
+- Never use client-decoded claims as the authority for API access
+- Serialize token refresh and fail closed when renewal or validation fails
+- Model signed-out, authenticating, authenticated, refreshing, expired, and revoked states explicitly
+- Revoke server-side credentials when supported and always clear local session material on logout
+- Remove identity-scoped caches, database rows, web-view state, and pending work during logout
+- Require recent authentication and explicit confirmation before account deletion
+- Make deletion idempotent, auditable, and complete across authoritative services and retained backups

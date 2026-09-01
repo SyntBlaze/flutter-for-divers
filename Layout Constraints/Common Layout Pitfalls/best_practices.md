@@ -1,0 +1,15 @@
+## Best Practices
+
+- Trace constraints from the failing render object toward its ancestors before changing widget structure
+- Give a scrollable a finite viewport when it shares a `Column` with non-scrolling content
+- Avoid tight flex allocation along an unbounded scroll axis
+- Prefer ordinary one-pass constraint layout over speculative intrinsic measurement
+- Keep large collections in bounded lazy viewports rather than shrink-wrapping their full extent
+- Derive width decisions from current constraints and content requirements
+- Test narrow windows, large text, long translations, and landscape or split-screen layouts
+- Apply system insets once at the correct composition boundary
+- Handle keyboard insets separately from persistent safe-area padding when their behavior differs
+- Use one primary scrollable when slivers can express the whole composition
+- Coordinate nested scrolling explicitly when independent viewports are genuinely required
+- Keep `LayoutBuilder` close to the widgets whose structure depends on its constraints
+- Use Flutter Inspector constraint information and performance profiling to confirm the diagnosis

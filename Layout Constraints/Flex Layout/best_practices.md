@@ -1,0 +1,14 @@
+## Best Practices
+
+- Use `Row` and `Column` when their axis communicates the layout clearly
+- Reason about incoming main-axis constraints before adding a flex child
+- Use `Expanded` only when the child must fill its proportional allocation
+- Use `Flexible` with a loose fit when the child may remain smaller than its allocation
+- Choose flex factors to express proportions rather than compensate for arbitrary child sizes
+- Use `MainAxisAlignment` for distributing genuinely unused space
+- Use `CrossAxisAlignment.stretch` only when every affected child should fill the cross axis
+- Provide the required text baseline explicitly when using baseline alignment
+- Use `Spacer` for proportional empty space and ordinary spacing for fixed design-system gaps
+- Constrain, wrap, truncate, or make content scrollable according to product intent when overflow occurs
+- Test flex layouts with long localized text, large text scale, narrow widths, and dynamic content
+- Inspect constraints and child sizes before changing alignment values to mask a layout problem

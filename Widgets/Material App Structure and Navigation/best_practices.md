@@ -1,0 +1,16 @@
+## Best Practices
+
+- Keep app-wide theming, localization, and route configuration stable at the `MaterialApp` boundary
+- Use `Scaffold` as the coordinator for a screen's standard Material regions and transient surfaces
+- Give app-bar navigation and actions clear labels, predictable order, and adequate touch targets
+- Test every configured `SliverAppBar` state with short, long, and overscrolled content
+- Reserve `BottomAppBar` for actions or custom composition rather than disguising it as destination navigation
+- Keep `BottomNavigationBar` item order and controlled selection stable across rebuilds
+- Use `NavigationBar` for a small, high-priority set of compact-layout destinations
+- Separate `NavigationDrawer` destinations from headings and supporting actions with clear semantics
+- Use `NavigationRail` at widths where destinations and content can remain comfortably usable
+- Close a `Drawer` before completing route changes and restore focus to a sensible location
+- Keep `TabBar`, its controller, and its associated content aligned in length and order
+- Use tabs for closely related peer content, not as a substitute for hierarchical route navigation
+- Avoid nesting competing horizontal scroll gestures inside `PageView` without an explicit interaction design
+- Test navigation with keyboard, screen readers, large text, deep links, back navigation, restoration, and multiple window sizes

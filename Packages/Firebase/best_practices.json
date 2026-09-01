@@ -1,0 +1,22 @@
+[
+  "Initialize Firebase once and make startup dependencies explicit",
+  "Use separate Firebase projects and configuration files for each environment",
+  "Add only the Firebase plugins and platform capabilities the application needs",
+  "Keep Firebase SDK types behind repository or service boundaries",
+  "Treat every client, including an authenticated client, as untrusted",
+  "Grant the minimum access required in Firestore, Realtime Database, and Storage Rules",
+  "Test Security Rules for permitted and rejected requests before deployment",
+  "Keep service credentials, signing secrets, and privileged operations off the client",
+  "Use App Check as defense in depth rather than as authentication or authorization",
+  "Minimize personal data collection and document consent, retention, and deletion behavior",
+  "Avoid placing secrets or authorization decisions in Remote Config",
+  "Model database documents, indexes, and paths around measured access patterns",
+  "Design writes to be idempotent and handle retries, offline state, and conflicts",
+  "Validate file type, size, ownership, and metadata for Cloud Storage uploads",
+  "Manage messaging tokens across refresh, sign-out, account changes, and device replacement",
+  "Handle foreground, background, and terminated message paths explicitly",
+  "Use emulators and test projects to exercise integrations without production data",
+  "Filter expected errors and remove sensitive values from logs, crash reports, and traces",
+  "Define actionable dashboards and alerts for crashes, latency, delivery, and backend failures",
+  "Dispose listeners, cancel subscriptions, and bound realtime data retained in memory"
+]

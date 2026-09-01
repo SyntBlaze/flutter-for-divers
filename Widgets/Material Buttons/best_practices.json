@@ -1,0 +1,13 @@
+[
+  "Use `ElevatedButton` selectively where elevation communicates useful prominence",
+  "Reserve `FilledButton` for a small number of important actions",
+  "Use `FilledButton.tonal` for medium-emphasis actions that still need a container",
+  "Give each screen no more than one clear primary floating action",
+  "Provide tooltips, adequate hit targets, and recognizable glyphs for icon-only buttons",
+  "Pair `OutlinedButton` with higher-emphasis actions without making it visually dominant",
+  "Keep popup menu commands concise, contextual, and keyboard accessible",
+  "Use segmented buttons only for small related sets and keep selection state controlled",
+  "Place `TextButton` where context makes its action easy to find and understand",
+  "Build `MenuAnchor` triggers with clear semantics and predictable focus behavior",
+  "Test all button states with keyboard navigation, screen readers, large text, and touch targets"
+]

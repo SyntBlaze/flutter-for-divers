@@ -1,0 +1,17 @@
+## Best Practices
+
+- Assign one clear owner to every responsibility
+- Choose only the layers the application complexity justifies
+- Point dependencies toward stable business policy
+- Keep widgets focused on rendering and user interaction
+- Model loading, success, empty, and failure states explicitly
+- Keep domain types independent of Flutter and external packages
+- Map DTOs and persistence records at the data boundary
+- Hide vendor SDKs and technical details behind focused interfaces
+- Wrap plugins and platform channels in application-owned abstractions
+- Validate and translate remote data at the API boundary
+- Treat storage schemas as implementation details
+- Keep side effects at explicit outer boundaries
+- Avoid sharing mutable models across layers
+- Test contracts and mappings at every boundary
+- Document deliberate exceptions to the dependency rules

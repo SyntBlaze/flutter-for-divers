@@ -1,0 +1,15 @@
+[
+  "Make controller ownership explicit and dispose owned controllers deterministically",
+  "Keep subscription handles and cancel them when their consumer stops listening",
+  "Close owned stream controllers and define shutdown behavior for long-lived services",
+  "Decode images near their rendered dimensions and set cache budgets from measurements",
+  "Pass values or callbacks into long-lived work instead of retaining `BuildContext`",
+  "Give static and singleton caches bounded capacity, expiry, or explicit invalidation",
+  "Add lifecycle-aware leak checks to focused tests and investigate every stable regression",
+  "Compare allocation snapshots before and after a repeatable user journey",
+  "Measure profile or release builds on representative physical devices",
+  "Track Dart heap, external memory, raster resources, and overall process memory separately",
+  "Warm the scenario, repeat it, and verify that memory settles instead of judging one peak",
+  "Fix unintended retaining references before applying broad cache clears or forced cleanup",
+  "Record a memory baseline and regression threshold for critical user journeys"
+]

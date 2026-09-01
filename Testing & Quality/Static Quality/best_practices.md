@@ -1,0 +1,15 @@
+## Best Practices
+
+- Run `flutter analyze` with a pinned project SDK in local and CI workflows
+- Keep analyzer configuration version-controlled and scoped as narrowly as possible
+- Adopt maintained lint baselines and make project-specific changes explicit
+- Give custom lint diagnostics actionable messages and test both matches and non-matches
+- Make `dart format` a routine pre-review check
+- Preview `dart fix`, inspect its diff, and verify the changed behavior
+- Review direct and transitive dependencies on a regular schedule
+- Remove obsolete dependencies, assets, flags, and tests together with dead implementation code
+- Generate coverage from a reproducible test command and compare like-for-like reports
+- Prioritize meaningful tests for critical branches over a universal percentage target
+- Keep generated code exclusions precise and verify that generation is reproducible
+- Require an owner, rationale, and removal condition for every quality-policy exception
+- Rerun formatting, analysis, and relevant tests after automated cleanup

@@ -1,0 +1,16 @@
+[
+  "Acquire and replace futures outside `build` so incidental rebuilds do not duplicate work",
+  "Keep stream identity stable and model errors, completion, and source changes explicitly",
+  "Use `ValueListenableBuilder.child` for subtrees that do not depend on the current value",
+  "Treat an `AsyncSnapshot` as immutable state and avoid reducing it to only `hasData`",
+  "Provide a meaningful idle presentation when no source is configured",
+  "Preserve usable prior content while waiting for a refresh when product semantics allow it",
+  "Expect multiple active stream updates without assuming every event produces a separate frame",
+  "Check completion data and errors independently rather than equating done with success",
+  "Use progress indicators only for pending work and preserve layout stability",
+  "Define empty results in domain terms and give users a relevant next step",
+  "Show concise failure context, expose safe retry, and avoid retry loops",
+  "Render useful data consistently while representing freshness separately",
+  "Keep builder callbacks pure, fast, and free of request-starting side effects",
+  "Test initial, loading, empty, error, data, refresh, source replacement, and disposal paths"
+]

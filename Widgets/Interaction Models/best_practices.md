@@ -1,0 +1,18 @@
+## Best Practices
+
+- Absorb input only when both the subtree and content behind it must be unavailable
+- Use ignored hit testing only when pointer pass-through is safe and intentional
+- Recognize semantic gestures at the narrowest useful subtree and account for gesture-arena competition
+- Place Material ink responses on a visible `Material` surface with appropriate shape and clipping
+- Use `InkResponse` when the response shape, containment, or radius needs explicit control
+- Keep raw pointer handling device-aware and prefer gesture recognizers for common interactions
+- Treat hover as enhancement and pair it with touch, keyboard, and semantic access
+- Give every dismissible item a stable key and update the backing collection when dismissal completes
+- Use strongly typed, minimal drag payloads and provide clear drag feedback
+- Choose long-press dragging where immediate drag recognition would conflict with another gesture
+- Validate drag candidates before accepting them and expose useful target-state feedback
+- Bound pan and scale behavior, and test it with touch, mouse, trackpad, and accessibility settings
+- Prefer established scroll views and reach for `Scrollable` only for custom mechanics
+- Define navigator boundaries and back behavior deliberately, including for nested navigation
+- Use stable, route-local unique hero tags and keep source and destination visuals compatible
+- Make every interaction reachable without relying exclusively on pointer precision, hover, dragging, or animation

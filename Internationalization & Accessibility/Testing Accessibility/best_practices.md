@@ -1,0 +1,12 @@
+## Best Practices
+
+- Enable semantics only for the scope that needs it and always dispose the returned handle
+- Use public `flutter_test` semantics APIs for application tests and keep helper ownership explicit
+- Assert labels, roles, states, actions, and traversal instead of matching one large brittle tree unnecessarily
+- Localize semantics strings and test representative languages, text directions, and message lengths
+- Run tap-target, label, and contrast guidelines as focused tests with actionable failures
+- Test normal, focused, selected, pressed, disabled, error, and high-contrast visual states
+- Exercise both large and nonlinear text scaling, not only the default scale
+- Let constrained content wrap, reflow, or scroll instead of shrinking essential text or clipping actions
+- Keep golden environments deterministic and pair image comparisons with behavioral assertions
+- Manually test critical journeys with supported screen readers and relevant alternative input methods

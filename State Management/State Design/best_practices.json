@@ -1,0 +1,14 @@
+[
+  "Use replacement snapshots for non-trivial shared state",
+  "Keep collections inside immutable state unmodifiable or defensively copied",
+  "Use sealed variants when states have meaningfully different valid data",
+  "Model loading, empty, error, and success explicitly",
+  "Preserve prior data during refresh only when the UI can communicate staleness clearly",
+  "Translate failures into actionable, presentation-safe state",
+  "Make copy-with operations preserve domain invariants",
+  "Define equality from observable semantics and test it",
+  "Derive view-specific values instead of storing duplicates",
+  "Execute commands outside build and expose their progress and failures",
+  "Give one-time events deliberate delivery and acknowledgement semantics",
+  "Treat restoration data as reconstructable UI state, not trusted permanent storage"
+]

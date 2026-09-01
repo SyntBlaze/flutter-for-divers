@@ -1,0 +1,13 @@
+## Best Practices
+
+- Choose the nearest or root navigator explicitly for every route-backed transient surface in nested navigation
+- Treat barrier dismissal, drag dismissal, system back, and programmatic dismissal as separate decisions
+- Return typed results from dialogs, sheets, and menus and handle cancellation as a valid outcome
+- Use `showBottomSheet` only when the sheet should remain owned by the current `Scaffold`
+- Insert raw entries into the intended overlay and keep one clear owner responsible for removing and disposing them
+- Prefer route-backed APIs when navigation history, modal semantics, focus scope, and result futures are desired
+- Use a deliberately scoped `ScaffoldMessenger` for messages that should survive route transitions
+- Check `context.mounted` after asynchronous gaps before finding a navigator, scaffold, or messenger
+- Provide meaningful barrier labels, accessible names, adequate contrast, and reachable dismissal controls
+- Contain focus within modal surfaces, support keyboard dismissal where appropriate, and restore focus to the trigger
+- Test overlays with nested navigators, safe areas, keyboards, display features, large text, screen readers, and rapid repeated presentation

@@ -1,0 +1,17 @@
+[
+  "Return `Future<T>` from asynchronous APIs so completion and failure are observable",
+  "Keep `FutureOr<T>` at intentional compatibility or callback boundaries rather than spreading dual-mode behavior",
+  "Use `Completer` only to bridge an imperative completion source, not as a substitute for returning a future chain",
+  "Give `async` functions explicit return types and avoid unobserved `async void` failures",
+  "Wrap awaited operations in the error-handling scope that owns recovery or reporting",
+  "Return or await every asynchronous branch created by `then()`",
+  "Catch only errors that the current layer can recover from or translate",
+  "Keep `whenComplete()` cleanup safe, bounded, and independent of the successful value",
+  "Start independent work before waiting for it collectively",
+  "Treat `Future.any()` as a completion race and arrange cancellation or cleanup for losing operations",
+  "Use `Future.delayed()` for scheduling, not precise timing or CPU-intensive work",
+  "Handle timeout as a distinct outcome and protect state from the source's possible late completion",
+  "Make cancellation cooperative and idempotent, with a clearly defined owner",
+  "Preserve original stack traces when adapting or translating asynchronous errors",
+  "Test success, failure, timeout, cancellation, and out-of-order completion paths"
+]

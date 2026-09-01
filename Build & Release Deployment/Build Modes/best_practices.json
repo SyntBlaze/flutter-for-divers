@@ -1,0 +1,16 @@
+[
+  "Use debug mode for iteration, assertions, and interactive diagnostics",
+  "Measure performance in profile mode on representative physical hardware",
+  "Run release-mode smoke tests before distributing an artifact",
+  "Treat JIT behavior and timings as development feedback rather than production evidence",
+  "Validate AOT-only code paths and target-specific constraints early",
+  "Keep widget state out of build methods so hot reload can preserve useful context",
+  "Use hot restart when initialization or global state must be rerun",
+  "Measure artifact contents and size instead of assuming tree shaking removed a dependency",
+  "Use obfuscation as one defense-in-depth measure, never as secret storage",
+  "Archive split debug information with the exact version, build number, and source revision",
+  "Keep mode-specific configuration explicit and reviewable",
+  "Do not ship secrets in any build mode; client binaries cannot keep embedded credentials private",
+  "Automate reproducible release builds and retain their provenance",
+  "Exercise crash reporting and symbolication before the first production incident"
+]

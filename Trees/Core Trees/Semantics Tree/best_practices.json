@@ -1,0 +1,12 @@
+[
+  "Prefer meaningful visible text before adding duplicate semantic labels",
+  "Use concise labels, values, hints, and state descriptions",
+  "Expose standard semantic actions whenever they describe the interaction",
+  "Use custom actions only when no standard accessibility action fits",
+  "Merge semantics only when descendants form one coherent accessible control",
+  "Exclude decorative or deliberately replaced semantics, not useful content",
+  "Use blocking semantics for modal or otherwise obscuring UI",
+  "Keep semantic indexes aligned with the user's logical reading order",
+  "Mark semantics dirty when a custom render object's accessible meaning changes",
+  "Test with platform screen readers and Flutter's semantics debugging tools"
+]

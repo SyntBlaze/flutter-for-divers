@@ -1,0 +1,15 @@
+[
+  "Keep render-object mutation inside the framework's rendering lifecycle",
+  "Respect each layout protocol's constraint and geometry contracts",
+  "Call the appropriate invalidation method when layout, paint, or semantics changes",
+  "Keep `performLayout` focused on geometry and `paint` focused on visual output",
+  "Use a proxy render box for a single-child effect that does not need a new child model",
+  "Avoid unbounded flex children along an unbounded main axis",
+  "Use stack positioning only when overlap or edge-relative placement is intentional",
+  "Prefer viewport and sliver protocols for lazily rendered scrolling content",
+  "Provide stable child identity when lazily laid-out list or grid items can reorder",
+  "Treat parent data as an implementation contract with the owning parent",
+  "Use the parent-data type expected by the parent render object",
+  "Detach listeners and owned resources when a custom render object is disposed",
+  "Profile layout, paint, and compositing before optimizing a render-object subtree"
+]

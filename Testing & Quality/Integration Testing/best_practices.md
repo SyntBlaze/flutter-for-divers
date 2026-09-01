@@ -1,0 +1,16 @@
+## Best Practices
+
+- Keep the end-to-end suite focused on critical journeys and cross-boundary risks
+- Build reusable setup and diagnostics into the harness while keeping flows independently runnable
+- Start every flow from explicit device, application, identity, and backend state
+- Drive stable user-visible interactions and assert outcomes that matter to the user or system
+- Run common configurations on pinned emulators and simulators for repeatable feedback
+- Retain representative real-device coverage for hardware and operating-system behavior
+- Use least-privilege, non-production credentials with automated rotation and cleanup
+- Seed unique sandbox data per test and make teardown safe to repeat
+- Avoid arbitrary delays; wait for observable conditions with explicit time bounds
+- Capture logs, screenshots, device metadata, and server correlation identifiers on failure
+- Use retries to gather evidence or temporarily contain known instability, not to conceal it
+- Give quarantined tests an owner, tracked reason, repair deadline, and visible reporting
+- Keep tests independent so execution order and parallelism cannot change their results
+- Review the suite regularly and move redundant checks to faster test layers

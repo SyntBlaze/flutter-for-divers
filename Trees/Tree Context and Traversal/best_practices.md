@@ -1,0 +1,16 @@
+## Best Practices
+
+- Use a context below the ancestor that the code needs to find
+- Use dependency-tracked inherited lookup for values that drive `build`
+- Use non-listening inherited lookup only when later changes should not rebuild the caller
+- Do not use one-time ancestor searches as reactive subscriptions
+- Prefer callbacks, controllers, or inherited APIs over tightly coupling descendants to ancestor `State`
+- Avoid retaining a context longer than its element's lifecycle
+- Check `mounted` after an asynchronous gap before using a context
+- Do not search ancestors from `dispose`; retain required references earlier in the lifecycle
+- Stop manual ancestor traversal as soon as its purpose is satisfied
+- Keep visitor callbacks read-only while traversing elements
+- Use notifications for decoupled upward events, not general mutable application state
+- Wait until build and layout are complete before reading render objects or size
+- Prefer layout APIs over post-frame size measurement when constraints can express the design
+- Keep direct `BuildOwner` access inside framework-level or diagnostic code

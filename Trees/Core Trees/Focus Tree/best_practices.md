@@ -1,0 +1,14 @@
+## Best Practices
+
+- Create long-lived focus nodes outside `build` and dispose owned nodes
+- Let `Focus` and `FocusScope` manage attachments and reparenting
+- Use focus scopes to contain navigation and restore the last focused child
+- Request focus in response to deliberate lifecycle or user events
+- Set `canRequestFocus`, `skipTraversal`, and descendant flags intentionally
+- Choose traversal policies that match the interface's visual and reading order
+- Use stable, unambiguous orders when explicit traversal ordering is required
+- Group regions that need independent traversal behavior
+- Express keyboard commands as intents and actions instead of raw key checks
+- Keep shortcut definitions close to the context in which they apply
+- Reuse the standard action and intent system before introducing custom dispatch
+- Test keyboard navigation, focus visibility, and scope restoration

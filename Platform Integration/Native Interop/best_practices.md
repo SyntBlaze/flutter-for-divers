@@ -1,0 +1,14 @@
+## Best Practices
+
+- Keep the native boundary small and expose domain-focused wrappers
+- Publish an explicit platform and architecture support matrix
+- Generate bindings from pinned headers and checked-in configuration
+- Regenerate and review bindings whenever upstream native APIs change
+- Prefer stable interop surfaces over language-specific implementation details
+- Build and verify native assets for every supported target
+- Make build hooks deterministic, cacheable, and free of hidden environment assumptions
+- Choose a linking strategy that matches platform distribution rules
+- Pair every native allocation with one documented owner and release path
+- Validate pointer bounds, alignment, nullability, and lifetime before dereferencing
+- Keep callback objects alive for as long as native code can invoke them
+- Exercise bindings on real release architectures, not only a development host

@@ -1,0 +1,17 @@
+[
+  "Write test descriptions as observable behavior and expected outcome",
+  "Keep groups shallow and make their shared context explicit",
+  "Create fresh mutable collaborators before every test",
+  "Dispose controllers, subscriptions, clients, and temporary resources deterministically",
+  "Drive widgets only through the WidgetTester supplied to the test",
+  "Wrap the subject with only the app services it genuinely needs",
+  "Prefer targeted pump durations when frame timing is part of the behavior",
+  "Reserve pumpAndSettle for finite animation and scheduling work",
+  "Use finders that are stable under harmless implementation changes",
+  "Assert finder cardinality before sending an interaction",
+  "Choose focused matchers that produce actionable failure output",
+  "Use find.byType only when type identity is meaningful to the contract",
+  "Treat visible text as localized product content, not always as a stable identifier",
+  "Pump after tap, text input, and drag when the action schedules state or frames",
+  "Keep gestures realistic and assert the user-visible result, not gesture internals"
+]

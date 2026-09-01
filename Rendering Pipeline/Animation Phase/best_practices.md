@@ -1,0 +1,16 @@
+## Best Practices
+
+- Use tickers and animation controllers instead of periodic timers for frame-synchronized motion
+- Create controllers with a `TickerProvider` whose lifecycle matches their owner
+- Use `SingleTickerProviderStateMixin` only for a `State` that creates one ticker
+- Use `TickerProviderStateMixin` when a `State` owns multiple or replacement tickers
+- Dispose every animation controller and manually created ticker with its owner
+- Keep ticker callbacks and animation listeners short enough to preserve the frame budget
+- Build animation progress from the supplied elapsed time rather than counting frames
+- Use simulations for physics-based motion and duration-driven controllers for fixed timelines
+- Use status listeners for endpoint and direction transitions rather than duplicating value checks
+- Allow `TickerMode` to silence animations in inactive widget subtrees
+- Do not treat ticker muting as a pause that freezes elapsed time
+- Avoid starting animations that cannot produce a visible or meaningful change
+- Profile rebuild, layout, and paint work triggered on every animation tick
+- Keep animation ownership explicit so starting, stopping, and disposal remain predictable

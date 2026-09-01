@@ -1,0 +1,17 @@
+[
+  "Treat `BuildContext` as a location in the element tree, not as a widget",
+  "Keep component build methods deterministic and free of side effects",
+  "Keep expensive work out of frequently rebuilt stateless subtrees",
+  "Own mutable UI state in the `State` associated with the correct tree location",
+  "Use inherited dependencies when consumers should rebuild after an ambient value changes",
+  "Use non-listening ancestor lookup only when no rebuild dependency is required",
+  "Place parent-data widgets under the render-object widget that understands their data",
+  "Keep render-object child models consistent with their element child models",
+  "Give ordered children stable keys when identity must survive insertion or reordering",
+  "Let the framework coordinate dirty-element scheduling through the build owner",
+  "Avoid retaining a build context beyond the mounted lifetime of its element",
+  "Check mounted state after an asynchronous gap before using a context or updating state",
+  "Reserve global-key reparenting for cases that genuinely require element and state preservation",
+  "Release subscriptions and other owned resources before an element becomes defunct",
+  "Use framework lifecycle hooks instead of depending on internal lifecycle states"
+]

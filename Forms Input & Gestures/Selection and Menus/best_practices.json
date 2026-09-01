@@ -1,0 +1,14 @@
+[
+  "Keep the model as the source of truth for controlled values and rebuild after accepting a callback",
+  "Represent disabled state intentionally and do not rely on color alone to explain why an action is unavailable",
+  "Use labels, grouping, semantics, adequate touch targets, and visible focus for every selection control",
+  "Choose controls by decision semantics: independent, mutually exclusive, immediate, ranged, or command-like",
+  "Provide textual or semantic values for sliders and do not require fine pointer precision",
+  "Use stable typed values and deterministic equality for menu entries and selected items",
+  "Treat `DropdownMenu` and `MenuAnchor` as Material 3 APIs with different state and composition contracts, not drop-in replacements",
+  "Keep menu items reachable by keyboard, use conventional arrow/Escape/Enter behavior, and restore focus to the opener when the menu closes",
+  "Avoid hiding critical or frequently used actions exclusively inside an undiscoverable popup menu",
+  "Keep segmented choices short, distinct, and few enough to remain legible at large text scales",
+  "Debounce or cancel expensive asynchronous suggestion work and ignore stale autocomplete results",
+  "Test touch, mouse, keyboard, screen reader, text scaling, high contrast, disabled state, and focus traversal"
+]

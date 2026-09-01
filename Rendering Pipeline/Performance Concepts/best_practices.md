@@ -1,0 +1,12 @@
+## Best Practices
+
+- Use the actual display refresh interval as the frame deadline.
+- Optimize missed deadlines and outliers, not only average frame time.
+- Profile in profile mode instead of drawing conclusions from debug builds.
+- Use the frame chart to separate UI-side work from raster-side work.
+- Keep rebuild scope as small as the changing state requires.
+- Avoid repeated intrinsic measurement and unnecessary relayout.
+- Avoid `saveLayer` unless the visual effect requires an offscreen buffer.
+- Decode images close to their displayed dimensions.
+- Enable detailed build and paint tracing only while investigating.
+- Reproduce performance problems on representative devices and workloads.

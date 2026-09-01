@@ -1,0 +1,20 @@
+## Best Practices
+
+- Request a capability only after a clear user action makes its value apparent
+- Check platform support and hardware availability before presenting a feature
+- Distinguish unavailable services from denied permissions and operation failures
+- Ask only for the narrowest permission required by the current feature
+- Provide context before the system permission dialog without coercing the user
+- Keep the application useful when optional access is denied
+- Offer settings guidance only when the operating system will not show another prompt
+- Never loop, surprise, or repeatedly pressure users with permission requests
+- Declare matching manifest entries, usage descriptions, and entitlements per platform
+- Treat permission and service state as changeable after backgrounding the application
+- Pause subscriptions and release device resources according to the application lifecycle
+- Cancel sensor and location streams when their owning feature is disposed
+- Minimize collection, precision, retention, and transmission of device-derived data
+- Avoid logging coordinates, identifiers, authentication results, and incoming-link secrets
+- Validate external URLs and incoming links before acting on their contents
+- Use package and device metadata for compatibility, not fragile device-model assumptions
+- Model success, denial, cancellation, unsupported hardware, and platform errors explicitly
+- Test first run, denial, revocation, interrupted flows, and platform-specific behavior on real devices

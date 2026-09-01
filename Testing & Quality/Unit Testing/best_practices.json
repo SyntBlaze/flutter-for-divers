@@ -1,0 +1,16 @@
+[
+  "Keep framework-independent business logic testable with pure Dart",
+  "Name tests after the behavior and condition they demonstrate",
+  "Follow arrange, act, and assert with one clearly identified system under test",
+  "Assert repository results and boundary translations through its public contract",
+  "Cover successful, rejected, and failed use-case paths",
+  "Test mappers with realistic boundary values and malformed external data",
+  "Choose validator cases from equivalence classes and exact boundaries",
+  "Prefer small handwritten fakes when their behavior improves readability",
+  "Use mocks sparingly for significant interaction contracts",
+  "Configure stub responses locally so each test explains its scenario",
+  "Build valid fixtures by default and override only scenario-relevant fields",
+  "Inject clocks, randomness, identifiers, and other nondeterministic inputs",
+  "Avoid shared mutable state and test-order dependencies",
+  "Keep assertions focused enough that a failure identifies the broken rule"
+]

@@ -1,0 +1,13 @@
+## Best Practices
+
+- Use the Apple Keychain for small Apple-platform secrets and select the narrowest suitable accessibility
+- Keep non-exportable cryptographic keys in the Android Keystore when platform and device support allow it
+- Use authenticated encryption and keep encrypted values separate from their protecting key
+- Store only the tokens the application needs and retain them for no longer than necessary
+- Prefer short-lived access tokens and server-enforced refresh token rotation with reuse detection
+- Use operating-system biometric prompts and key policies instead of handling biometric data
+- Require a fresh biometric gate for high-risk actions and clear its authorization when the app locks
+- Delete secrets on logout and account deletion according to an explicit lifecycle policy
+- Avoid logging, copying, serializing, or exposing secrets through diagnostics and crash reports
+- Test lockout, cancellation, enrollment changes, key invalidation, restore, migration, and storage failure
+- Document the threat model and keep privileged secrets on trusted servers

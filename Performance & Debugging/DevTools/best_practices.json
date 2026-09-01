@@ -1,0 +1,17 @@
+[
+  "Start with a specific, reproducible user interaction and record only the interval needed to explain it",
+  "Use debug mode for structural diagnostics and profile mode for representative performance investigation",
+  "Measure on physical devices that represent the slow and high-refresh-rate ends of the supported range",
+  "Warm up the interaction, control device temperature and background activity, and compare multiple recordings",
+  "Inspect UI and raster durations independently before deciding whether to optimize build, layout, paint, or rasterization",
+  "Use the Inspector to verify constraints, ownership, and dependency scope before restructuring a widget tree",
+  "Interpret rebuild counts together with build cost and subtree size",
+  "Keep CPU captures narrow and compare self time, total time, callers, and callees",
+  "Take memory snapshots at equivalent lifecycle checkpoints and repeat the scenario before concluding that memory leaks",
+  "Correlate network events with CPU work and timeline spans so response parsing is not mistaken for transport latency",
+  "Keep logs structured and actionable, and never record secrets, tokens, or sensitive payloads",
+  "Instrument application-specific work with balanced, bounded timeline events and remove excessive diagnostic overhead",
+  "Compare app-size reports only when target platform, architecture, build mode, flags, and source baseline are controlled",
+  "Save traces, build metadata, device details, and reproduction steps when sharing a performance finding",
+  "Change one suspected cause at a time and rerun the same measurement before accepting an optimization"
+]

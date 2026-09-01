@@ -1,0 +1,21 @@
+[
+  "Treat navigable URLs as stable, user-facing application state",
+  "Keep the route tree and navigation conventions easy to discover",
+  "Choose the simplest routing abstraction that satisfies the requirements",
+  "Prefer typed route arguments where practical",
+  "Use path parameters for resource identity and query parameters for optional state",
+  "Parse and validate all route input at the navigation boundary",
+  "Keep sensitive values and credentials out of URLs",
+  "Make guards, redirects, and middleware deterministic",
+  "Represent authentication loading before deciding where to redirect",
+  "Preserve the intended destination through sign-in and onboarding",
+  "Avoid triggering navigation as a side effect of widget builds",
+  "Give each major tab an independent stack only when its history must be preserved",
+  "Keep route paths independent from translated labels and screen titles",
+  "Use replacement navigation when users must not return to the previous flow",
+  "Define an intentional policy for system back, browser back, and app exit",
+  "Restore enough route state for the user to resume meaningfully",
+  "Handle unknown and malformed locations with a useful recovery path",
+  "Test direct links, redirects, nested stacks, and back navigation",
+  "Verify routing behavior on every supported platform and window size"
+]

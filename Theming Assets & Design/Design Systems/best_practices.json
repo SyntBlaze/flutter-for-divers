@@ -1,0 +1,16 @@
+[
+  "Use semantic names that communicate purpose instead of embedding literal values",
+  "Keep token layers explicit and expose supported overrides through typed APIs",
+  "Build spacing from a limited scale and document intentional exceptions",
+  "Pair semantic background and foreground colors and verify their contrast",
+  "Test typography with large text, long translations, and font fallback",
+  "Apply radius and elevation scales consistently to communicate containment and depth",
+  "Define default, hovered, focused, pressed, selected, disabled, loading, and error states where relevant",
+  "Keep reusable widgets composable, accessible, and aligned with familiar Flutter APIs",
+  "Make catalog scenarios deterministic and easy to compare across themes and viewports",
+  "Use golden tests for stable visual contracts and behavioral tests for interaction and semantics",
+  "Review golden diffs as product changes rather than treating baseline regeneration as routine",
+  "Give tokens and components clear owners, documentation, migration notes, and deprecation paths",
+  "Measure adoption and remove duplicate local styling as the system matures",
+  "Validate design-system releases in representative applications before broad rollout"
+]

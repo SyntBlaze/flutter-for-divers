@@ -1,0 +1,14 @@
+[
+  "Keep local UI state in the closest lifecycle owner that needs it",
+  "Make `setState()` callbacks synchronous, small, and limited to the mutation",
+  "Stop asynchronous work or reject late results when a state object is disposed",
+  "Use inherited dependencies when subtree scope is part of the design",
+  "Prefer aspect filtering only when consumers genuinely depend on distinct slices",
+  "Give every notifier one clear owner responsible for disposal",
+  "Replace `ValueNotifier` values instead of mutating their internal collections",
+  "Send notifications only after a coherent state transition",
+  "Hoist invariant subtrees out of listenable builder callbacks",
+  "Keep all builders pure and repeatable",
+  "Use restoration identifiers and property registration consistently",
+  "Treat keep-alive as temporary retention, not persistence"
+]

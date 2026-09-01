@@ -1,0 +1,18 @@
+## Best Practices
+
+- Treat interface connectivity as a scheduling hint and real request results as reachability evidence
+- Model offline, unauthenticated, captive, degraded, and server-failure outcomes separately
+- Keep offline reads honest about freshness and show whether local mutations are pending or failed
+- Avoid sending credentials or private data to an endpoint until captive interception is ruled out
+- Persist a queue item atomically with the local state change that makes it visible
+- Store stable operation identifiers and enough immutable intent to reconstruct each request
+- Make queue claiming, acknowledgement, retry scheduling, and dead-letter handling crash-safe
+- Process bounded batches and persist checkpoints so workers can stop whenever the platform requires
+- Use foreground, lifecycle, push, timer, and connectivity events as opportunities rather than guarantees
+- Respect platform battery and background limits instead of relying on exact execution times
+- Apply capped exponential backoff with jitter to transient failures and honor server retry guidance
+- Do not retry validation, authorization, or permanent failures as though they were connectivity failures
+- Resolve conflicts against current remote state before attempting a replacement mutation
+- Preserve one idempotency key across every delivery attempt, timeout, restart, and worker handoff
+- Keep server-side idempotency records long enough to cover the client's maximum replay window
+- Test process death, duplicate delivery, reordered work, account changes, captive portals, and conflicts

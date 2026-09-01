@@ -1,0 +1,21 @@
+## Best Practices
+
+- Build a testing pyramid with many fast tests and a focused set of device tests
+- Test observable behavior through stable public interfaces
+- Keep each test independent and safe to run in any order
+- Use fixed clocks, seeded randomness, and controlled asynchronous scheduling
+- Keep network services, file systems, and live backends out of deterministic tests
+- Prefer small fakes for stateful collaborators and mocks for narrow interactions
+- Stub every meaningful result, failure, empty response, and boundary condition
+- Verify state and outcomes before verifying implementation details
+- Give tests names that describe the condition and expected behavior
+- Use finders and semantic labels that survive harmless layout refactors
+- Advance frames deliberately instead of relying blindly on `pumpAndSettle`
+- Keep golden fixtures, fonts, themes, pixel ratios, and rendering conditions controlled
+- Review golden diffs as visual changes rather than automatically accepting them
+- Run critical integration journeys on representative devices and platforms
+- Reset permissions, storage, authentication, and backend state between device scenarios
+- Dispose controllers, focus nodes, subscriptions, timers, and test-owned resources
+- Capture logs, screenshots, seed values, and device details when a test fails
+- Quarantine flaky tests only with an owner, diagnosis, and removal deadline
+- Use previews and debuggers for exploration, then encode regressions as automated tests

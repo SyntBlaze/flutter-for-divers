@@ -1,0 +1,18 @@
+## Best Practices
+
+- Give a viewport finite cross-axis constraints and an intentional scroll-axis extent
+- Keep scroll ownership explicit when controllers or positions are shared
+- Use the simplest `ScrollView` that preserves lazy construction and composition needs
+- Compose mixed scrolling sections as slivers inside one viewport
+- Honor every field of `SliverConstraints` in a custom render sliver
+- Return finite, normalized, and mutually consistent `SliverGeometry`
+- Use builder delegates for long or unbounded lists and grids
+- Provide stable keys or index lookup when lazy children can reorder
+- Choose grid delegates from content sizing and available cross-axis space
+- Avoid wrapping every list item in a separate `SliverToBoxAdapter`
+- Keep persistent-header extent calculations cheap and deterministic
+- Reach for `NestedScrollView` only when separate scrollables need coordinated offsets
+- Avoid shrink-wrapping when the viewport can expand to a bounded parent extent
+- Retain off-screen children selectively rather than keeping the entire lazy collection alive
+- Profile scrolling with representative item counts, images, and device performance
+- Test reverse, horizontal, overscroll, large-text, and dynamic-content cases

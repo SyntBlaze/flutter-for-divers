@@ -1,0 +1,14 @@
+## Best Practices
+
+- Identify creation, ownership, and destruction events before selecting a mechanism
+- Keep ephemeral state at widget or feature scope
+- Split unrelated application state by responsibility and lifetime
+- Make route-scoped owners follow route disposal
+- Preserve form drafts deliberately and model submission separately from editing
+- Attach freshness, request identity, and invalidation metadata to server cache state
+- Version and validate all persisted schemas
+- Derive duplicate views from a single authoritative source
+- Give optimistic writes stable identities and deterministic rollback behavior
+- Reconcile late remote results only with the operation they belong to
+- Register restorable values in stable restoration scopes
+- Test state across navigation, backgrounding, process recreation, and session reset

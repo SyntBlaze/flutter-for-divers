@@ -1,0 +1,18 @@
+## Best Practices
+
+- Install top-level error handlers before starting application work
+- Always retain the original stack trace when forwarding an error
+- Preserve Flutter framework diagnostics in `FlutterError.onError`
+- Coordinate root-isolate handlers to prevent duplicate crash reports
+- Catch only exceptions a repository can translate or recover from
+- Map technical errors into stable application-owned failure types
+- Model expected business failure explicitly
+- Keep programmer errors visible during development
+- Represent loading, empty, unavailable, stale, and failed states deliberately
+- Offer retry only when it can change the outcome
+- Use bounded exponential backoff with jitter for transient failures
+- Check idempotency before retrying writes
+- Define cache freshness and synchronization behavior for offline use
+- Redact secrets and personal data from crash reports
+- Test each boundary with representative failures and stack traces
+- Keep crash-reporting failures from causing another application failure

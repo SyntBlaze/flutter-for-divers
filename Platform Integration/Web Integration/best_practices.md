@@ -1,0 +1,16 @@
+## Best Practices
+
+- Keep custom `index.html` changes compatible with Flutter's generated bootstrap contract
+- Set the document base URL and deployment path deliberately
+- Prefer typed, narrowly scoped JavaScript bindings over unstructured global access
+- Validate Wasm module loading and memory assumptions in every supported browser
+- Make navigation produce meaningful, shareable, and restorable URLs
+- Design service-worker updates so users do not run mismatched cached assets
+- Version caches and remove obsolete entries during service-worker activation
+- Provide complete manifest metadata and appropriately sized icons
+- Measure renderer startup, download, and frame performance on representative devices
+- Configure CORS on the server with the narrowest required origins, methods, and headers
+- Request browser permissions in context and handle denial as a normal outcome
+- Use secure origins for production features that require a secure context
+- Test installation, offline behavior, refresh, and updates independently
+- Verify web behavior across the browsers and deployment paths the application supports

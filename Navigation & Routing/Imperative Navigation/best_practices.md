@@ -1,0 +1,11 @@
+## Best Practices
+
+- Push typed routes and await their futures only where their results are consumed
+- Pop from the correct navigator and return values that match the route's result type
+- Keep named-route identifiers centralized and reject malformed arguments early
+- Use replacement for completed steps that users must not revisit with Back
+- Write removal predicates that clearly document the stack boundary to retain
+- Prefer stable route identity over assumptions about a stack's current depth
+- Treat a `null` route result as cancellation unless `null` is a meaningful domain value
+- Pass required destination data through typed constructors whenever practical
+- Guard navigation at the event source, use `try`/`finally`, and check `context.mounted` after awaiting

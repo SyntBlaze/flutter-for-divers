@@ -1,0 +1,22 @@
+[
+  "Separate internationalization infrastructure from the localized content delivered for each locale",
+  "Declare supported locales explicitly and keep locale resolution deterministic",
+  "Define a documented fallback chain for language, script, region, and the application's default locale",
+  "Preserve a user's explicit locale choice without mistaking it for the device's current preference",
+  "Use stable semantic message keys and give translators context, descriptions, and parameter meaning",
+  "Prefer generated, typed accessors so missing keys and invalid parameters surface during development",
+  "Express plurals, gender, and other selections as complete structured messages",
+  "Do not concatenate translated sentence fragments or assume English word order",
+  "Format dates, times, numbers, currencies, percentages, and units with the resolved locale",
+  "Keep stored and transmitted values locale-neutral, then localize them only for display and input",
+  "Use directional padding, alignment, icons, and traversal behavior where layouts must support RTL",
+  "Test mixed-direction content, numerals, punctuation, and user-generated text in RTL locales",
+  "Allow text to wrap and scale; avoid fixed dimensions derived from one language",
+  "Use fonts and fallback fonts that cover every supported script and required glyph",
+  "Localize semantic labels, hints, errors, announcements, and non-visual accessibility text",
+  "Test every supported locale plus fallback, missing-message, long-text, and large-text scenarios",
+  "Use locale-controlled widget tests and golden tests rather than relying on the host environment",
+  "Automate checks for missing, unused, duplicated, and placeholder-inconsistent translations",
+  "Keep the localization layer behind a stable application-facing API to contain migrations",
+  "Have fluent reviewers validate meaning and cultural fit before releasing important user-facing copy"
+]

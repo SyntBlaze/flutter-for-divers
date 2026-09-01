@@ -1,0 +1,16 @@
+## Best Practices
+
+- Prefer immutable models at public state and layer boundaries
+- Keep DTOs aligned with external schemas, not domain behavior
+- Give entities stable identity and protect their invariants
+- Make invalid value objects impossible or explicit to construct
+- Keep conversions explicit and directional
+- Use narrowly scoped extensions with unambiguous names
+- Separate input-format checks from domain invariants
+- Keep constants near their owner and avoid universal dumping grounds
+- Build themes from named design tokens and focused component themes
+- Keep route definitions centralized enough to discover but feature-owned where practical
+- Never hand-edit reproducible generated output
+- Keep fixtures small, deterministic, and explicit about the scenario they represent
+- Use names and folders that communicate ownership and boundary
+- Avoid creating shared abstractions before multiple real consumers exist

@@ -1,0 +1,12 @@
+[
+  "Prefer gesture recognizers when application behavior is expressed as taps, drags, or scales",
+  "Use `Listener` only for behavior that genuinely needs raw pointer events",
+  "Remove pointer routes when their owner is disposed or the sequence ends",
+  "Keep global pointer routes short-lived, lightweight, and side-effect aware",
+  "Do not assume that handling an event stops delivery to later hit test entries",
+  "Clear pressed, dragging, and capture-like state when a pointer is cancelled",
+  "Register pointer-signal candidates through the resolver instead of making every target act",
+  "Use `AbsorbPointer` when the blocking widget should remain the hit-test target",
+  "Use `IgnorePointer` when the subtree should be absent from pointer hit testing",
+  "Test overlapping targets, cancellation, and scroll signals on representative input devices"
+]

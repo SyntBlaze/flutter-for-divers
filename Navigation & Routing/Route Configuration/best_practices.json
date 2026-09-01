@@ -1,0 +1,15 @@
+[
+  "Keep the route table centralized enough to audit while allowing feature-owned destination builders",
+  "Choose one canonical URI representation and test normalization at application boundaries",
+  "Make route builders deterministic and free of redirects, data fetching, and other navigation side effects",
+  "Keep redirects pure where possible, set an explicit precedence, and test for cycles",
+  "Model guard state explicitly and retain the user's intended destination through authentication",
+  "Decode and validate path parameters before constructing destination state",
+  "Parse query parameters with documented defaults and preserve repeated values when meaningful",
+  "Treat route extras as optional process-local optimization rather than durable navigation state",
+  "Centralize named-route identifiers and reject missing or mistyped arguments at the route boundary",
+  "Give every nested route an explicit navigator owner and test back behavior in each branch",
+  "Use typed destination models while retaining runtime validation for external route input",
+  "Refresh routing only for navigation-relevant state and avoid notification or redirect loops",
+  "Provide explicit error destinations with diagnostics, recovery, and safe fallback navigation"
+]

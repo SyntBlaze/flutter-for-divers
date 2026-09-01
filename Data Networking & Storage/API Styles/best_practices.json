@@ -1,0 +1,16 @@
+[
+  "Choose the interaction style from data shape, direction, latency, platform support, and operational constraints",
+  "Keep transport models behind a typed application boundary so UI state does not depend on wire details",
+  "Publish explicit contracts for authentication, errors, compatibility, deadlines, cancellation, and observability",
+  "Use HTTP methods and status codes consistently, and attach idempotency controls to safely repeatable REST mutations",
+  "Bound GraphQL query cost and test partial-data, schema-evolution, and normalized-cache behavior",
+  "Set gRPC deadlines deliberately and preserve forward-compatible Protocol Buffer field evolution",
+  "Treat WebSocket reconnect, resubscription, heartbeat, ordering, backpressure, and deduplication as protocol behavior",
+  "Use event identifiers and bounded retry delays to make server-sent event reconnection resumable",
+  "Pause or relax polling when application lifecycle and connectivity make fresh data unnecessary",
+  "Add jitter and server-guided delay to long-poll reconnects so many clients do not synchronize",
+  "Give every paginated query a stable order and define how refresh replaces or reconciles accumulated items",
+  "Treat cursors as opaque, query-specific tokens and persist them only as long as their contract permits",
+  "Use offset pagination when its direct-access simplicity outweighs drift and deep-offset costs",
+  "Test disconnects, partial responses, duplicates, out-of-order delivery, stale pages, and mid-operation cancellation"
+]

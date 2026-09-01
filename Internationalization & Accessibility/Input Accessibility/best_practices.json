@@ -1,0 +1,13 @@
+[
+  "Make every pointer or touch action available through keyboard navigation",
+  "Test the complete interface with sequential switch scanning",
+  "Keep visible control text and accessible names consistent for voice control",
+  "Arrange focus according to visual and semantic reading order",
+  "Use traversal groups and `FocusTraversalPolicy` only at meaningful navigation boundaries",
+  "Use `Shortcuts` to map input gestures to intents rather than embedding key checks throughout widgets",
+  "Use `Actions` so buttons, menus, keys, and assistive input can invoke the same command",
+  "Provide an obvious focus indicator with sufficient contrast",
+  "Treat `Tooltip` as supplemental help and provide an accessible name independently",
+  "Keep error announcements concise, actionable, and free from repeated unsolicited interruptions",
+  "Test traversal in both directions and restore focus to a logical target after context changes"
+]

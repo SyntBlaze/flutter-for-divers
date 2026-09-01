@@ -1,0 +1,26 @@
+## Best Practices
+
+- Keep `App` focused on application-wide configuration and composition
+- Define Material theme, navigation, and localization once in `MaterialApp`
+- Apply Cupertino navigation and visual conventions consistently
+- Use `WidgetsApp` only when intentionally supplying design-system behavior
+- Place page-level Material surfaces under the appropriate `Scaffold`
+- Keep `AppBar` titles and actions concise, accessible, and responsive
+- Allow `Text` to wrap and scale without clipping
+- Preserve selection, scaling, recognition, and semantics in rich text
+- Pair meaningful `Icon` glyphs with labels or semantic descriptions
+- Constrain `Image` layout and provide loading, error, and semantic behavior
+- Respect Flutter's brand rules when using `FlutterLogo`
+- Remove development `Placeholder` widgets before release
+- Prefer focused widgets when `Container` would obscure layout intent
+- Use fixed `SizedBox` dimensions only where content can safely fit
+- Verify the incoming constraints before relying on `Center` expansion
+- Use directional alignment when layouts must adapt to text direction
+- Make `Row` children flexible before accepting horizontal overflow
+- Avoid flex children in a `Column` with unbounded height
+- Keep `Stack` paint order, hit testing, and clipping intentional
+- Use `Expanded` only for children that should fill their flex allocation
+- Use `Flexible` when a flex child may remain smaller than its allocation
+- Use `Spacer` for proportional flex gaps rather than arbitrary positioning
+- Keep `Builder` callbacks small and use their local context deliberately
+- Reserve `StatefulBuilder` for narrowly scoped, short-lived state

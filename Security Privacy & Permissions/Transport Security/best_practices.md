@@ -1,0 +1,19 @@
+## Best Practices
+
+- Use HTTPS directly for every production API and asset endpoint
+- Reject cleartext traffic instead of depending on an HTTP-to-HTTPS redirect
+- Keep hostname and certificate-chain validation enabled in every release build
+- Configure supported TLS versions, certificates, and cipher policy at the server or edge
+- Treat certificate-validation callbacks and debug trust anchors as development-only tools
+- Use Android network security configuration to express deliberate per-domain trust policy
+- Keep App Transport Security exceptions narrow and remove them when their dependency is retired
+- Adopt certificate pinning only after documenting its threat model and operational cost
+- Ship overlapping backup pins and rehearse certificate rotation and emergency recovery
+- Set and maintain HSTS on eligible HTTPS web origins, with careful subdomain and preload decisions
+- Use request signing as an application-layer control, not as a replacement for TLS
+- Prefer server-held credentials or device-bound asymmetric keys over a shared secret embedded in the app
+- Bind signatures to the method, authority, path, relevant headers, body digest, timestamp, and nonce
+- Enforce replay windows and single-use identifiers atomically on the server
+- Keep credentials and sensitive request or response data out of logs and diagnostics
+- Test expired certificates, hostname mismatches, redirects, clock skew, rotation, offline recovery, and replay attempts
+- Verify release behavior on supported Android and Apple versions and separately in browsers

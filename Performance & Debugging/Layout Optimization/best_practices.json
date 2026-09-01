@@ -1,0 +1,16 @@
+[
+  "Use bounded constraints to express geometry directly",
+  "Replace `IntrinsicHeight` with explicit constraints or a layout designed for the required relationship",
+  "Replace `IntrinsicWidth` when the parent can provide an appropriate width",
+  "Enable `shrinkWrap` only when the viewport truly must derive its size from its children",
+  "Compose large heterogeneous scrolling pages with slivers",
+  "Use builder constructors for collections whose children can extend beyond the viewport",
+  "Provide stable item extents when the design makes them known",
+  "Use one scrollable for content that should move as one continuous viewport",
+  "Keep independent nested scrolling only when the interaction explicitly requires separate viewports",
+  "Remove redundant layout wrappers based on measurements, not tree depth alone",
+  "Avoid invalidating large layout subtrees when only local geometry changes",
+  "Profile realistic data volumes on representative devices",
+  "Compare slow-frame layout timings before and after each change",
+  "Test optimized layouts across accessibility, localization, orientation, and screen-size variants"
+]

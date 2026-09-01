@@ -1,0 +1,14 @@
+## Best Practices
+
+- Mark semantics dirty whenever accessible meaning changes, even if visual output does not
+- Keep custom `SemanticsConfiguration` data synchronized with labels, values, state, and available actions
+- Reuse stable semantic structure where possible instead of causing unnecessary subtree churn
+- Introduce semantic boundaries only where a subtree should form an independently meaningful accessible unit
+- Merge descendants only when users should perceive and operate them as one coherent element
+- Preserve meaningful descendants when overriding `assembleSemanticsNode()`
+- Keep semantic bounds, transforms, clipping, and traversal order aligned with the interface users encounter
+- Expose only actions that are currently available and connect them to the same behavior as ordinary activation
+- Write concise, localized labels and values without repeating information a platform already announces
+- Acquire a `SemanticsHandle` only for as long as a client genuinely needs semantics enabled
+- Inspect the generated semantics tree with Flutter diagnostics before investigating the platform bridge
+- Test semantics hit testing, traversal, announcements, and actions with real accessibility services on each target platform
